@@ -19,4 +19,4 @@ mklink images <PATH_TO_GOOGLE_DRIVE_FOLDER>/images
 mklink other-assets <PATH_TO_GOOGLE_DRIVE_FOLDER>/other-assets
 ```
 
-    Replacing `<GAME_MAKER_PROJECT_FOLDER>` with the location of the GameMaker project folder and `<PATH_TO_GOOGLE_DRIVE_FOLDER>` with the location of the Google Drive folder
+Replacing `<GAME_MAKER_PROJECT_FOLDER>` with the location of the GameMaker project folder and `<PATH_TO_GOOGLE_DRIVE_FOLDER>` with the location of the Google Drive folder
