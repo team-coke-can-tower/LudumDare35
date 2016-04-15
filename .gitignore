@@ -1,0 +1,9 @@
+sprites/images
+other-assets
+
+# Remove Config files
+*.png
+*.bmp
+*.ico
+Configs/Default/*
+!Configs/Default/windows
