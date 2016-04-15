@@ -4,7 +4,7 @@ An entry for Ludum Dare 35 Game Jam
 
 ## Development
 
-The assets in this game-jam are linked using a Google Drive. To load them into the correct place, you must use symlinks, as below, to do this, see below:
+The assets in this game-jam are linked using a Google Drive. To load them into the correct place, you must use symlinks as shown below:
 
  - First clone the repository into the correct location
 
