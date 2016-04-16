@@ -20,10 +20,13 @@
     <script>scripts\get_free_sides.gml</script>
   </scripts>
   <objects name="objects">
-    <object>objects\obj_square</object>
-    <object>objects\obj_triangle</object>
-    <object>objects\obj_pentagon</object>
     <object>objects\player</object>
+    <objects name="shapes">
+      <object>objects\obj_shape</object>
+      <object>objects\obj_pentagon</object>
+      <object>objects\obj_triangle</object>
+      <object>objects\obj_square</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\main_game</room>
