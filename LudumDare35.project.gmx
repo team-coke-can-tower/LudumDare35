@@ -17,7 +17,7 @@
     <scripts name="shapes">
       <script>scripts\add_shape.gml</script>
       <script>scripts\get_free_sides.gml</script>
-      <script>scripts\attach_shape_to_parent.gml</script>
+      <script>scripts\attach_shape.gml</script>
       <script>scripts\translate_blob.gml</script>
       <script>scripts\rotate_blob.gml</script>
     </scripts>
@@ -27,6 +27,7 @@
       <script>scripts\dot.gml</script>
     </scripts>
     <script>scripts\move_player.gml</script>
+    <script>scripts\player_init.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>

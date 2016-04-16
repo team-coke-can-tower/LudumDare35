@@ -11,27 +11,41 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>601</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>///Initialize attributes
-
-root_shape = instance_create(x, y, obj_triangle); // root triangle shape
-shapes[0] = root_shape;  // all shapes belonging to player object
-move_speed = 5;  // universal speed of player shapes
-
-</string>
+            <kind>9</kind>
+            <script>player_init</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -55,7 +69,7 @@ move_speed = 5;  // universal speed of player shapes
             <kind>1</kind>
             <string>///Move player
 
-move_player(self, 0, -move_speed);
+move_player(0, -move_speed);
 </string>
           </argument>
         </arguments>
@@ -80,7 +94,7 @@ move_player(self, 0, -move_speed);
             <kind>1</kind>
             <string>///Move player
 
-move_player(self, 0, move_speed);
+move_player(0, move_speed);
 
 </string>
           </argument>
@@ -106,7 +120,7 @@ move_player(self, 0, move_speed);
             <kind>1</kind>
             <string>///Move player
 
-move_player(self, move_speed, 0);
+move_player(move_speed, 0);
 
 </string>
           </argument>
@@ -132,7 +146,7 @@ move_player(self, move_speed, 0);
             <kind>1</kind>
             <string>///Move player
 
-move_player(self, -move_speed, 0);
+move_player(-move_speed, 0);
 
 </string>
           </argument>
@@ -149,6 +163,16 @@ move_player(self, -move_speed, 0);
         <useapplyto>-1</useapplyto>
         <exetype>2</exetype>
         <functionname></functionname>
+    <event eventtype="5" enumb="13">
+      <action>
+        <libid>1</libid>
+        <id>601</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
@@ -164,6 +188,28 @@ for (i = 0; i &lt; array_length_1d(shapes); i++) {
     }
 }
 </string>
+            <kind>9</kind>
+            <script>add_shape</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>-1</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
