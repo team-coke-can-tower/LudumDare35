@@ -14,22 +14,27 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
+    <scripts name="bullets">
+      <script>scripts\shoot_bullets.gml</script>
+      <script>scripts\shoot_all_bullets.gml</script>
+    </scripts>
     <scripts name="shapes">
       <script>scripts\add_shape.gml</script>
       <script>scripts\get_free_sides.gml</script>
       <script>scripts\attach_shape.gml</script>
-      <script>scripts\translate_blob.gml</script>
-      <script>scripts\rotate_blob.gml</script>
+      <script>scripts\init_triangle.gml</script>
+      <script>scripts\init_square.gml</script>
+      <script>scripts\init_heptagon.gml</script>
+      <script>scripts\get_translated_sides.gml</script>
     </scripts>
-    <scripts name="vectors">
+    <scripts name="geometry">
       <script>scripts\normalize.gml</script>
       <script>scripts\add_vectors.gml</script>
       <script>scripts\dot.gml</script>
+      <script>scripts\rotate_point_with_origin.gml</script>
     </scripts>
     <script>scripts\move_player.gml</script>
     <script>scripts\player_init.gml</script>
-    <script>scripts\shoot_bullets.gml</script>
-    <script>scripts\shoot_all_bullets.gml</script>
     <script>scripts\get_bounding_square.gml</script>
   </scripts>
   <objects name="objects">
