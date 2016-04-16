@@ -7,5 +7,6 @@ for(var i = 0;i < array_length_1d(sides);i++){
         sides[i, 0],
         sides[i, 1],
         x,
-        y)
+        y,
+        direction)
 }
