@@ -13,7 +13,6 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\init.gml</script>
     <scripts name="shapes">
       <script>scripts\add_shape.gml</script>
       <script>scripts\get_free_sides.gml</script>
