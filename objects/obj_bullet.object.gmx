@@ -52,7 +52,9 @@ from_enemy = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (y &lt; 0) {
+            <string>if(not (0 &lt; x &lt; room_width)) {
+    instance_destroy();
+} else if(not (0 &lt; y &lt; room_height)) {
     instance_destroy();
 }
 </string>
