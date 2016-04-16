@@ -9,6 +9,7 @@
     <sprite>sprites\spr_square</sprite>
     <sprite>sprites\spr_triangle</sprite>
     <sprite>sprites\spr_pentagon</sprite>
+    <sprite>sprites\spr_bullet</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -35,6 +36,8 @@
       <object>objects\obj_triangle</object>
       <object>objects\obj_square</object>
     </objects>
+    <object>objects\obj_enemy</object>
+    <object>objects\obj_bullet</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\main_game</room>
