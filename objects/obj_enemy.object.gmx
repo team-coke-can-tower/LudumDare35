@@ -74,6 +74,7 @@ switch(attack_type) {
     break;
     case "melee": melee_attack = instance_create(x, y, obj_pulse);
                   melee_attack.creator = shape;
+                  melee_attack.from_enemy = true;
                   break;
 }
 
@@ -101,9 +102,25 @@ alarm[1] = 30;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Make sure enemy stays on screen
+            <string>///Make sure enemy stays on screen, do collision detection
 
 if(y &gt; room_height) {
+    instance_destroy();
+}
+
+//Collide with bullets shot by player
+has_collided = false;
+with(shape){
+    collided_bullet = instance_place(x, y, obj_bullet);
+    if(collided_bullet != noone) {
+        if(not instance_place(x, y, obj_bullet).from_enemy) {
+            has_collided = true;
+            instance_destroy();
+            with(collided_bullet) instance_destroy();
+        }
+    }
+}
+if(has_collided) {
     instance_destroy();
 }
 

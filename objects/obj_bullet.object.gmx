@@ -25,9 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Initialize speed
+            <string>///Initialize speed and whether from an enemy or not
 
 vspeed = -10;
+from_enemy = false;
+
 </string>
           </argument>
         </arguments>
