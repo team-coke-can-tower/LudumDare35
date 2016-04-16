@@ -11,7 +11,9 @@
     <sprite>sprites\spr_pentagon</sprite>
     <sprite>sprites\spr_bullet</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bckgrnd_frame</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="bullets">
