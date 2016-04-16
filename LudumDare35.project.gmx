@@ -6,16 +6,22 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_player</sprite>
-    <sprite>sprites\sprite2</sprite>
+    <sprite>sprites\spr_square</sprite>
+    <sprite>sprites\spr_triangle</sprite>
+    <sprite>sprites\spr_pentagon</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\init.gml</script>
+    <script>scripts\translate_blob.gml</script>
+    <script>scripts\rotate_blob.gml</script>
   </scripts>
   <objects name="objects">
-    <object>objects\obj_player</object>
+    <object>objects\obj_square</object>
+    <object>objects\obj_triangle</object>
+    <object>objects\obj_pentagon</object>
+    <object>objects\player</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\main_game</room>
