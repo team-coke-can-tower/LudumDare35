@@ -6,6 +6,9 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprites name="overlays">
+      <sprite>sprites\spr_triangle_overlay_1</sprite>
+    </sprites>
     <sprite>sprites\spr_square</sprite>
     <sprite>sprites\spr_triangle</sprite>
     <sprite>sprites\spr_pentagon</sprite>
@@ -22,6 +25,7 @@
       <script>scripts\add_shape.gml</script>
       <script>scripts\get_free_sides.gml</script>
       <script>scripts\attach_shape.gml</script>
+      <script>scripts\deteriate_triangle.gml</script>
       <script>scripts\init_triangle.gml</script>
       <script>scripts\init_square.gml</script>
       <script>scripts\init_heptagon.gml</script>

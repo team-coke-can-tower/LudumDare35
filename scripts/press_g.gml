@@ -1,1 +1,1 @@
-
+deteriate_triangle()
