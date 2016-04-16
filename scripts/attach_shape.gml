@@ -8,12 +8,16 @@ var new_shape = argument2;
 
 var new_shape_sprite = object_get_sprite(new_shape);
 
-var new_shapeX = translated_sides[side_index, 0] + sprite_get_width(new_shape_sprite)/2 * cos(side_normal_angle/360 * pi * 2)
-var new_shapeY = translated_sides[side_index, 1] - sprite_get_height(new_shape_sprite)/2 * sin(side_normal_angle/360 * pi * 2)
+var new_shapeX = translated_sides[side_index, 0] + sprite_get_height(new_shape_sprite)/3 * cos(side_normal_angle/360 * pi * 2)
+var new_shapeY = translated_sides[side_index, 1] - sprite_get_height(new_shape_sprite)/3 * sin(side_normal_angle/360 * pi * 2)
 
 var new_object = instance_create(new_shapeX, new_shapeY, new_shape);
 
 new_object.image_angle = side_normal_angle - 90;
 new_object.direction = side_normal_angle - 90;
+
+with(new_object){
+    update_shape()
+}
 
 return new_object;

@@ -64,7 +64,6 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\main_game</room>
-    <room>rooms\menu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
