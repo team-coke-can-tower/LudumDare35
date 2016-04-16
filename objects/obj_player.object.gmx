@@ -153,17 +153,7 @@ move_player(-move_speed, 0);
         </arguments>
       </action>
     </event>
-    <event eventtype="6" enumb="4">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-    <event eventtype="5" enumb="13">
+    <event eventtype="5" enumb="32">
       <action>
         <libid>1</libid>
         <id>601</id>
@@ -179,21 +169,12 @@ move_player(-move_speed, 0);
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>///Shoot bullet from all triangles
-
-for (i = 0; i &lt; array_length_1d(shapes); i++) {
-    if(object_get_name(shapes[i]) == "obj_triangle") {
-        bullet = instance_create(shapes[i].x, shapes[i].y, obj_bullet);
-    }
-}
-</string>
             <kind>9</kind>
-            <script>add_shape</script>
+            <script>shoot_bullets</script>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>-1</string>
+            <string></string>
           </argument>
           <argument>
             <kind>0</kind>
