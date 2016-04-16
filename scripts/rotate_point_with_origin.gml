@@ -12,7 +12,7 @@ var origin_to_point = point_direction(originX, originY, pointX, pointY)
 var overall_angle = origin_to_point + theta
 
 var new_point;
-new_point[0] = cos(overall_angle/360 * 2 * pi) * dist_origin_to_point + originX
-new_point[1] = sin(overall_angle/360 * 2 * pi) * dist_origin_to_point + originY
+new_point[0] = originX + cos(overall_angle/360 * 2 * pi) * dist_origin_to_point
+new_point[1] = originY - sin(overall_angle/360 * 2 * pi) * dist_origin_to_point 
 
 return new_point

@@ -31,6 +31,8 @@
       <script>scripts\init_square.gml</script>
       <script>scripts\get_translated_sides.gml</script>
       <script>scripts\update_shape.gml</script>
+      <script>scripts\get_sides.gml</script>
+      <script>scripts\update_shapes.gml</script>
     </scripts>
     <scripts name="geometry">
       <script>scripts\normalize.gml</script>
