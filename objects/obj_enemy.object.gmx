@@ -28,17 +28,56 @@
             <string>///Choose random shape
 randomize();
 
-shapes[0] = obj_triangle;
-shapes[1] = obj_square;
-
 switch(irandom_range(0, 1)) {
     case 0: shape = instance_create(x, y, obj_triangle);
-    break;
-    case 1: shape = instance_create(x, y, obj_triangle);  // TODO: make square and pentagon
-    break;
+            attack_type = "shooter";
+            break;
+    case 1: shape = instance_create(x, y, obj_square);
+            attack_type = "melee";
+            break;
 }
+
 vspeed = 5;
 shape.vspeed = 5;
+
+alarm[1] = 30;  // start shooting
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Use attack, reset alarm
+
+switch(attack_type) {
+    case "shooter":
+    with(shape){
+        shoot_bullets(false);
+    }
+    break;
+    case "melee": melee_attack = instance_create(x, y, obj_pulse);
+                  melee_attack.creator = shape;
+                  break;
+}
+
+alarm[1] = 30;
 
 </string>
           </argument>
