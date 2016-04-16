@@ -1,11 +1,10 @@
-///move_player(player, dx, dy)
+///move_player(dx, dy)
 
-var player = argument0;
-var dx = argument1;
-var dy = argument2;
+var dx = argument0;
+var dy = argument1;
 
-for (i = 0; i < array_length_1d(player.shapes); i++) {
-    player.shapes[i].x += dx;
-    player.shapes[i].y += dy;
+for (i = 0; i < array_length_1d(shapes); i++) {
+    shapes[i].x += dx;
+    shapes[i].y += dy;
 }
 

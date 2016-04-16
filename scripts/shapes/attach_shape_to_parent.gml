@@ -1,4 +1,4 @@
-///attach_shape(child_shape, side_index)
+///attach_shape_to_parent(parent_shape, child_shape, side_index)
 
 var parent_shape = argument0;
 var child_shape = argument1;
