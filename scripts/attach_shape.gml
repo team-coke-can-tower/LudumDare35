@@ -8,7 +8,7 @@ var new_shape = argument2;
 
 var new_shape_sprite = object_get_sprite(new_shape);
 
-var new_shapeX = translated_sides[side_index, 0] + sprite_get_xoffset(new_shape_sprite) * sin(side_normal_angle)
-var new_shapeY = translated_sides[side_index, 1] + sprite_get_yoffset(new_shape_sprite) * cos(side_normal_angle)
+var new_shapeX = translated_sides[side_index, 0] + sprite_get_width(new_shape_sprite)/2 * sin(side_normal_angle/360 * pi)
+var new_shapeY = translated_sides[side_index, 1] - sprite_get_height(new_shape_sprite)/2 * cos(side_normal_angle/360 * pi)
 
 return instance_create(new_shapeX, new_shapeY, new_shape)

@@ -5,9 +5,9 @@ get_bounding_square()
 
 sides[0, 0] = x
 sides[0, 1] = sprite_bottom
-sides[1, 0] = sprite_left + x / 2
+sides[1, 0] = sprite_left + sprite_width / 4
 sides[1, 1] = y
-sides[2, 0] = sprite_right - x / 2
+sides[2, 0] = sprite_right - sprite_width / 4
 sides[2, 1] = y
 
 used_sides[0] = false
@@ -18,6 +18,5 @@ full_health = 4
 current_health = 4
 frame = 0
 
-/// i dont know what im doing :(((
 image_speed = 0
 

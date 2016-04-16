@@ -8,12 +8,11 @@ var shape = argument0;
 var free_sides = ds_list_create()
 
 
-for(var i = 0;i < array_length_1d(sides);i++){
+for(var i = 0;i <= array_length_1d(sides);i++){
     if(!shape.used_sides[i]){
-        var angle_center_to_edge = point_direction(
-            x, y,
-            translated_sides[i, 0],
-            translated_sides[i, 1]);
+        var a = translated_sides[i, 0];
+        var b = translated_sides[i, 1]
+        var angle_center_to_edge = point_direction(x, y, a, b);
         
         if(self.id != other.root_shape.id){
             var angle_root_to_parent = point_direction(other.x, other.y, x, y)
