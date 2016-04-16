@@ -18,6 +18,5 @@ full_health = 4
 current_health = 4
 frame = 0
 
-/// i dont know what im doing :(((
 image_speed = 0
 
