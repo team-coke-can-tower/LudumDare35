@@ -37,6 +37,9 @@
       <script>scripts\dot.gml</script>
       <script>scripts\rotate_point_with_origin.gml</script>
     </scripts>
+    <scripts name="pulse">
+      <script>scripts\create_pulse.gml</script>
+    </scripts>
     <script>scripts\move_player.gml</script>
     <script>scripts\player_init.gml</script>
     <script>scripts\get_bounding_square.gml</script>
@@ -44,6 +47,10 @@
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
+    <objects name="attacks">
+      <object>objects\obj_bullet</object>
+      <object>objects\obj_pulse</object>
+    </objects>
     <objects name="shapes">
       <object>objects\obj_shape</object>
       <object>objects\obj_pentagon</object>

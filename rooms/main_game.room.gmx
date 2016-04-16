@@ -53,6 +53,7 @@
   <instances>
     <instance objName="obj_player" x="352" y="256" name="inst_8101A7A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_generator" x="0" y="-32" name="inst_949B58E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_square" x="224" y="128" name="inst_C2251D4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bckgrnd_frame" x="0" y="704" w="1048" h="64" xo="0" yo="64" id="10000001" name="inst_63043C62" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
