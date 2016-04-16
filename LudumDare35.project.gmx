@@ -45,7 +45,6 @@
     <script>scripts\move_player.gml</script>
     <script>scripts\player_init.gml</script>
     <script>scripts\get_bounding_square.gml</script>
-    <script>scripts\press_g.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
