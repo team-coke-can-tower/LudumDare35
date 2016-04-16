@@ -25,29 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Choose random shape
-randomize();
+            <string>///Set initial enemy alarm
 
-switch(irandom_range(0, 1)) {
-    case 0: shape = instance_create(x, y, obj_triangle);
-            attack_type = "shooter";
-            break;
-    case 1: shape = instance_create(x, y, obj_square);
-            attack_type = "melee";
-            break;
-}
-
-vspeed = 5;
-shape.vspeed = 5;
-
-alarm[1] = 30;  // start shooting
-
+alarm[0] = 90;
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="1">
+    <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -64,48 +50,11 @@ alarm[1] = 30;  // start shooting
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Use attack, reset alarm
+            <string>///Set off enemy, reset alarm
 
-switch(attack_type) {
-    case "shooter":
-    with(shape){
-        shoot_bullets(false);
-    }
-    break;
-    case "melee": melee_attack = instance_create(x, y, obj_pulse);
-                  melee_attack.creator = shape;
-                  break;
-}
-
-alarm[1] = 30;
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Make sure enemy stays on screen
-
-if(y &gt; room_height) {
-    instance_destroy();
-}
+enemy_x = irandom_range(0, room_width);
+instance_create(enemy_x, 0, obj_enemy);
+alarm[0] = 90;
 
 </string>
           </argument>
