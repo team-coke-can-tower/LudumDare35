@@ -29,6 +29,7 @@
     <script>scripts\move_player.gml</script>
     <script>scripts\player_init.gml</script>
     <script>scripts\shoot_bullets.gml</script>
+    <script>scripts\shoot_all_bullets.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
