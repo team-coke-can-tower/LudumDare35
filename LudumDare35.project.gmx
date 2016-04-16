@@ -14,10 +14,13 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\init.gml</script>
-    <script>scripts\translate_blob.gml</script>
-    <script>scripts\rotate_blob.gml</script>
-    <script>scripts\add_shape.gml</script>
-    <script>scripts\get_free_sides.gml</script>
+    <scripts name="shapes">
+      <script>scripts\add_shape.gml</script>
+      <script>scripts\get_free_sides.gml</script>
+      <script>scripts\attach_shape_to_parent.gml</script>
+      <script>scripts\translate_blob.gml</script>
+      <script>scripts\rotate_blob.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\player</object>
