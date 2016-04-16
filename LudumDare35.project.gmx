@@ -45,6 +45,9 @@
     <script>scripts\move_player.gml</script>
     <script>scripts\player_init.gml</script>
     <script>scripts\get_bounding_square.gml</script>
+    <scripts name="global_game">
+      <script>scripts\game_over.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
@@ -63,6 +66,8 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\main_game</room>
+    <room>rooms\rm_game_over</room>
+    <room>rooms\rm_menu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
