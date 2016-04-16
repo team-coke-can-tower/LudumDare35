@@ -1,23 +1,17 @@
-///deteriate_shape()
+///deteriorate_shape()
 ///This is called in the context of a shape
 
-if (current_health = full_health)
-    {
+if (current_health = full_health) {
     frame = 1;
     image_speed = 1;
     current_health -= 1;
-    }
-else 
-    {
+} else {
     current_health -= 1;
 
-    if (current_health = 0)
-        {
+    if (current_health = 0) {
         instance_destroy();
-        }
-    else 
-        {
+    } else {
         frame += 18;
-        }
     }
+}
 
