@@ -52,6 +52,7 @@
     </objects>
     <object>objects\obj_enemy</object>
     <object>objects\obj_bullet</object>
+    <object>objects\obj_enemy_generator</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\main_game</room>

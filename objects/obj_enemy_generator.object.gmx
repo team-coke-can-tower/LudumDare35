@@ -25,27 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Choose random shape
-randomize();
+            <string>///Set initial enemy alarm
 
-shapes[0] = obj_triangle;
-shapes[1] = obj_square;
-
-switch(irandom_range(0, 1)) {
-    case 0: shape = instance_create(x, y, obj_triangle);
-    break;
-    case 1: shape = instance_create(x, y, obj_triangle);  // TODO: make square and pentagon
-    break;
-}
-vspeed = 5;
-shape.vspeed = 5;
-
+alarm[0] = 90;
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -62,11 +50,11 @@ shape.vspeed = 5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Make sure enemy stays on screen
+            <string>///Set off enemy, reset alarm
 
-if(y &gt; room_height) {
-    instance_destroy();
-}
+enemy_x = irandom_range(0, room_width);
+instance_create(enemy_x, 0, obj_enemy);
+alarm[0] = 90;
 
 </string>
           </argument>
