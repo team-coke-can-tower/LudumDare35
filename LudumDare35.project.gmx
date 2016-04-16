@@ -21,9 +21,15 @@
       <script>scripts\translate_blob.gml</script>
       <script>scripts\rotate_blob.gml</script>
     </scripts>
+    <scripts name="vectors">
+      <script>scripts\normalize.gml</script>
+      <script>scripts\add_vectors.gml</script>
+      <script>scripts\dot.gml</script>
+    </scripts>
+    <script>scripts\move_player.gml</script>
   </scripts>
   <objects name="objects">
-    <object>objects\player</object>
+    <object>objects\obj_player</object>
     <objects name="shapes">
       <object>objects\obj_shape</object>
       <object>objects\obj_pentagon</object>
