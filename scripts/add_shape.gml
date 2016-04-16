@@ -4,7 +4,7 @@
 var shape = argument0;
 
 while(true) {
-    var chosen_parent = shapes[irandom_range(0, array_length_1d(shapes)-1)];
+    var chosen_parent = shapes[| irandom_range(0, ds_list_size(shapes)-1)];
     var possible_sides = get_free_sides(chosen_parent);
     if(array_length_1d(possible_sides) == 0) {
         continue;

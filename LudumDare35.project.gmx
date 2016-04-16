@@ -30,6 +30,7 @@
     <script>scripts\player_init.gml</script>
     <script>scripts\shoot_bullets.gml</script>
     <script>scripts\shoot_all_bullets.gml</script>
+    <script>scripts\get_bounding_square.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
