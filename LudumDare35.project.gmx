@@ -30,6 +30,7 @@
     <sprite>sprites\spr_enemy_triangle</sprite>
     <sprite>sprites\spr_enemy_pentagon</sprite>
     <sprite>sprites\spr_enemy_hexagon</sprite>
+    <sprite>sprites\game_over_text</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_still</background>
@@ -102,6 +103,7 @@
       <object>objects\obj_enemy_square</object>
       <object>objects\enemy</object>
     </objects>
+    <object>objects\obj_game_over</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
