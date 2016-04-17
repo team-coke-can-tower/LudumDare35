@@ -67,11 +67,8 @@ alarm[1] = 30;  // start shooting
             <string>///Use attack, reset alarm
 
 switch(attack_type) {
-    case "shooter":
-    with(shape){
-        shoot_bullets(false);
-    }
-    break;
+    case "shooter": with(shape) shoot_bullets(false);
+                    break;
     case "melee": melee_attack = instance_create(x, y, obj_pulse);
                   melee_attack.creator = shape;
                   melee_attack.from_enemy = true;
@@ -110,7 +107,6 @@ if(y &gt; room_height) {
 }
 
 //Collide with bullets shot by player
-has_collided = false;
 with(shape){
     collided_bullet = instance_place(x, y, obj_bullet);
     if(collided_bullet != noone) {
@@ -119,13 +115,10 @@ with(shape){
             sound_play(snd_damage3);
             instance_destroy();
             with(collided_bullet) instance_destroy();
+            with(other) instance_destroy();
         }
     }
 }
-if(has_collided) {
-    instance_destroy();
-}
-
 </string>
           </argument>
         </arguments>
