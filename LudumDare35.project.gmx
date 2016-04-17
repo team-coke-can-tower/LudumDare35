@@ -63,6 +63,7 @@
     </objects>
     <object>objects\obj_enemy</object>
     <object>objects\obj_enemy_generator</object>
+    <object>objects\obj_pause</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\main_game</room>
