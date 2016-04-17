@@ -32,8 +32,10 @@
     <scripts name="bullets">
       <script>scripts\shoot_bullets.gml</script>
       <script>scripts\shoot_all_bullets.gml</script>
+      <script>scripts\shoot_bullet.gml</script>
     </scripts>
     <scripts name="shapes">
+      <script>scripts\get_center_coords.gml</script>
       <script>scripts\add_shape.gml</script>
       <script>scripts\get_free_sides.gml</script>
       <script>scripts\attach_shape.gml</script>
@@ -44,11 +46,13 @@
       <script>scripts\update_shape.gml</script>
       <script>scripts\get_sides.gml</script>
       <script>scripts\update_shapes.gml</script>
+      <script>scripts\init_shape.gml</script>
     </scripts>
     <scripts name="geometry">
       <script>scripts\normalize.gml</script>
       <script>scripts\dot.gml</script>
       <script>scripts\rotate_point_with_origin.gml</script>
+      <script>scripts\polar_to_cart.gml</script>
     </scripts>
     <scripts name="pulse">
       <script>scripts\create_pulse.gml</script>
@@ -59,6 +63,7 @@
     <scripts name="global_game">
       <script>scripts\game_over.gml</script>
     </scripts>
+    <script>scripts\get_debug_str.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
