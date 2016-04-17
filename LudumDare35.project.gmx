@@ -20,6 +20,7 @@
       <sprite>sprites\spr_quit</sprite>
     </sprites>
     <sprites name="Rachel's Happy Place">
+      <sprite>sprites\spr_tri_crumble</sprite>
       <sprite>sprites\spr_white</sprite>
       <sprite>sprites\spr_tri_animation</sprite>
       <sprite>sprites\spr_green</sprite>
@@ -87,6 +88,7 @@
       <object>objects\obj_tri_animation</object>
       <object>objects\obj_white_particle</object>
       <object>objects\obj_green_particle</object>
+      <object>objects\object22</object>
     </objects>
     <objects name="attacks">
       <object>objects\obj_bullet</object>
@@ -116,7 +118,7 @@
     <object>objects\obj_game_over</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_menu</room>
+    <room>rooms\rm_main_game</room>
     <room>rooms\rm_main_game</room>
     <room>rooms\rm_game_over</room>
   </rooms>
