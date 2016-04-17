@@ -75,6 +75,7 @@ switch(attack_type) {
     case "melee": melee_attack = instance_create(x, y, obj_pulse);
                   melee_attack.creator = shape;
                   melee_attack.from_enemy = true;
+                  sound_play(snd_pulse);
                   break;
 }
 
@@ -115,6 +116,7 @@ with(shape){
     if(collided_bullet != noone) {
         if(not instance_place(x, y, obj_bullet).from_enemy) {
             has_collided = true;
+            sound_play(snd_damage3);
             instance_destroy();
             with(collided_bullet) instance_destroy();
         }

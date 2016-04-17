@@ -26,5 +26,7 @@ if (alarm[0] == -1){
     lr_bullet.image_angle = lr_direction + 90;
     lr_bullet.from_enemy = not is_player;
     
+    sound_play(snd_laser);
+    
     alarm[0] = 5 // set the next shooting time as 1/6 second (5/30)
 }

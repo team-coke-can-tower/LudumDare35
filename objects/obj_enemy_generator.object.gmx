@@ -25,9 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Set initial enemy alarm
+            <string>///Set initial enemy alarm and start music
 
 alarm[0] = 90;
+
+sound_loop(snd_main_music); // TODO: move this to somewhere more sensible
+
 </string>
           </argument>
         </arguments>

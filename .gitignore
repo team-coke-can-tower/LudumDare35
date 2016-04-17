@@ -1,5 +1,7 @@
 sprites/images
+sound/audio
 other-assets
+sounds-music
 
 # Remove Config files
 *.png
