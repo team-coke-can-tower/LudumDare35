@@ -55,8 +55,8 @@ from_enemy = false;
     instance_destroy();
 }
 if(instance_exists(creator)){
-    vspeed = creator.vspeed;
-    hspeed = creator.hspeed;
+    x = creator.x;
+    y = creator.y;
 } else {
     instance_destroy();
 }

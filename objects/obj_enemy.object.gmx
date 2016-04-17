@@ -69,10 +69,7 @@ alarm[1] = 30;  // start shooting
 switch(attack_type) {
     case "shooter": with(shape) shoot_bullets(false);
                     break;
-    case "melee": melee_attack = instance_create(x, y, obj_pulse);
-                  melee_attack.creator = shape;
-                  melee_attack.from_enemy = true;
-                  audio_play_sound(snd_pulse, 1, false);
+    case "melee": create_pulse(shape, true);
                   break;
 }
 
@@ -100,13 +97,8 @@ alarm[1] = 30;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Make sure enemy stays on screen, do collision detection
+            <string>///Do collision detection with bullets
 
-if(y &gt; room_height) {
-    instance_destroy();
-}
-
-//Collide with bullets shot by player
 with(shape){
     collided_bullet = instance_place(x, y, obj_bullet);
     if(collided_bullet != noone) {
@@ -125,6 +117,73 @@ with(shape){
             with(other) instance_destroy();
         }
     }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Do collision detection with pulse
+
+
+with(shape){
+    collided_pulse = instance_place(x, y, obj_pulse);
+    if(collided_pulse != noone) {
+        if(not collided_pulse.from_enemy) {
+            has_collided = true;
+            audio_play_sound(snd_damage3, 2, false);
+            
+            // Attach to main object
+            if(other.shape.object_index == obj_enemy_triangle)
+                with(global.player) add_shape(obj_triangle)
+            if(other.shape.object_index == obj_enemy_square)
+                with(global.player) add_shape(obj_square)
+            
+            instance_destroy();
+            with(collided_pulse) instance_destroy();
+            with(other) instance_destroy();
+        }
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Make sure enemy dies after leaving screen
+
+if(y &gt; room_height) {
+    instance_destroy();
 }
 </string>
           </argument>

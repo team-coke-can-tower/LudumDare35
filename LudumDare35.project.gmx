@@ -25,7 +25,6 @@
     <sprite>sprites\spr_hexagon</sprite>
     <sprite>sprites\spr_bullet</sprite>
     <sprite>sprites\spr_square_pulse</sprite>
-    <sprite>sprites\sprite10</sprite>
     <sprite>sprites\spr_enemy_square</sprite>
     <sprite>sprites\spr_enemy_triangle</sprite>
     <sprite>sprites\spr_enemy_pentagon</sprite>
