@@ -113,6 +113,13 @@ with(shape){
         if(not instance_place(x, y, obj_bullet).from_enemy) {
             has_collided = true;
             audio_play_sound(snd_damage3, 2, false);
+            
+            // Attach to main object
+            if(other.shape.object_index == obj_enemy_triangle)
+                with(global.player) add_shape(obj_triangle)
+            if(other.shape.object_index == obj_enemy_square)
+                with(global.player) add_shape(obj_square)
+            
             instance_destroy();
             with(collided_bullet) instance_destroy();
             with(other) instance_destroy();

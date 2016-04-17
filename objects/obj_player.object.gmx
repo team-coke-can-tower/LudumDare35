@@ -69,7 +69,7 @@
             <kind>1</kind>
             <string>///Collide with bullets shot by enemy
 
-for(i = 0; i &lt; ds_list_size(shapes); i++) {
+for(var i = 0; i &lt; ds_list_size(shapes); i++) {
     with(shapes[| i]) {
         collided_bullet = instance_place(x, y, obj_bullet);
         if(collided_bullet != noone) {
