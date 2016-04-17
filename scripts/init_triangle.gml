@@ -1,7 +1,7 @@
 /// init_triangle()
 // initialises the triangle with the required properties
 
-update_shape()
+init_shape()
 
 used_sides[0] = true
 used_sides[1] = false
@@ -9,7 +9,3 @@ used_sides[2] = false
 
 full_health = 4
 current_health = 4
-frame = 0
-
-image_speed = 0
-
