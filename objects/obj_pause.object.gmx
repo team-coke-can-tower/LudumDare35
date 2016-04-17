@@ -57,7 +57,7 @@ audio_play_sound(snd_main_music, 0, true); // TODO: move this to somewhere more 
 if(paused) {
     //Display frozen game in background (game is deactivated, so is now invisible)
     if(surface_exists(frozen_screen_surf)) {
-        draw_surface_stretched(frozen_screen_surf, 0, 0, display_get_gui_width(), display_get_gui_height());
+        draw_surface(frozen_screen_surf, 0, 0);
     }
     draw_set_color(c_black);
     draw_set_alpha(0.5);
