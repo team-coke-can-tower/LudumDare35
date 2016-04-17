@@ -11,6 +11,8 @@
     <sound>sound\snd_damage2</sound>
     <sound>sound\snd_damage3</sound>
     <sound>sound\snd_pulse</sound>
+    <sound>sound\snd_btn_hover</sound>
+    <sound>sound\snd_btn_select</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="buttons">
@@ -29,11 +31,11 @@
     </sprites>
     <sprites name="tutorial_sprites">
       <sprite>sprites\spr_box</sprite>
-      <sprite>sprites\spr_w</sprite>
-      <sprite>sprites\spr_a</sprite>
-      <sprite>sprites\spr_s</sprite>
-      <sprite>sprites\spr_d</sprite>
       <sprite>sprites\spr_mouse</sprite>
+      <sprite>sprites\spr_keyw</sprite>
+      <sprite>sprites\spr_keya</sprite>
+      <sprite>sprites\spr_keys</sprite>
+      <sprite>sprites\spr_keyd</sprite>
     </sprites>
     <sprite>sprites\spr_triangle</sprite>
     <sprite>sprites\spr_square</sprite>
@@ -47,11 +49,6 @@
     <sprite>sprites\spr_enemy_hexagon</sprite>
     <sprite>sprites\game_over_text</sprite>
     <sprite>sprites\sprite19</sprite>
-    <sprite>sprites\spr_keyw</sprite>
-    <sprite>sprites\spr_keya</sprite>
-    <sprite>sprites\spr_keys</sprite>
-    <sprite>sprites\spr_keyd</sprite>
-    <sprite>sprites\spr_mouse</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_still</background>

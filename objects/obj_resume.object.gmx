@@ -99,6 +99,7 @@ image_speed = 0
           <argument>
             <kind>1</kind>
             <string>image_speed = 0.5
+audio_play_sound(snd_btn_hover, 0, false);
 </string>
           </argument>
         </arguments>
@@ -122,6 +123,7 @@ image_speed = 0
           <argument>
             <kind>1</kind>
             <string>/// jack can fix this probabalt
+audio_play_sound(snd_btn_select, 0, false);
 </string>
           </argument>
         </arguments>
