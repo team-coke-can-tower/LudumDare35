@@ -104,8 +104,8 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_main_game</room>
     <room>rooms\rm_menu</room>
+    <room>rooms\rm_main_game</room>
     <room>rooms\rm_game_over</room>
   </rooms>
   <help>
