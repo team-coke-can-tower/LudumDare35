@@ -31,6 +31,11 @@
     <sprite>sprites\spr_enemy_pentagon</sprite>
     <sprite>sprites\spr_enemy_hexagon</sprite>
     <sprite>sprites\game_over_text</sprite>
+    <sprite>sprites\spr_keyw</sprite>
+    <sprite>sprites\spr_keya</sprite>
+    <sprite>sprites\spr_keys</sprite>
+    <sprite>sprites\spr_keyd</sprite>
+    <sprite>sprites\spr_mouse</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_still</background>
@@ -104,11 +109,19 @@
       <object>objects\enemy</object>
     </objects>
     <object>objects\obj_game_over</object>
+    <objects name="Tutorial">
+      <object>objects\obj_keyw</object>
+      <object>objects\obj_keya</object>
+      <object>objects\obj_keys</object>
+      <object>objects\obj_keyd</object>
+      <object>objects\obj_mouse</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
     <room>rooms\rm_main_game</room>
     <room>rooms\rm_game_over</room>
+    <room>rooms\rm_tutorial</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
