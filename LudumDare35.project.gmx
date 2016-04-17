@@ -114,6 +114,9 @@
     <object>objects\obj_pause</object>
     <object>objects\obj_main_game</object>
     <object>objects\obj_game_over</object>
+    <objects name="appearing_shapes">
+      <object>objects\obj_growing_triangle</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>

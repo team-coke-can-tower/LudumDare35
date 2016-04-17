@@ -90,9 +90,21 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (image_index = (frame + 17) % sprite_get_number(spr_triangle)) {
+            <string>if (image_index == (frame + 17) % sprite_get_number(spr_triangle)) {
     image_index = frame;
 }
+if(growing_triangle != noone) {
+    growing_triangle.x = x;
+    growing_triangle.y = y;
+    growing_triangle.image_angle = image_angle;
+    if (growing_triangle.image_index == 16) {
+        with(growing_triangle) instance_destroy();
+        growing_triangle = noone;
+        visible = true;
+    }
+}
+
+
 </string>
           </argument>
         </arguments>
