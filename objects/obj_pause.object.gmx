@@ -28,7 +28,7 @@
             <string>paused = false;
 frozen_screen_surf = -1; // Surface used to show frozen screen while paused
 
-sound_loop(snd_main_music); // TODO: move this to somewhere more sensible
+audio_play_sound(snd_main_music, 0, true); // TODO: move this to somewhere more sensible
 
 </string>
           </argument>
@@ -101,8 +101,10 @@ if(paused) {
 
 if(not paused) {
     instance_deactivate_all(true);
+    audio_pause_sound(snd_main_music);
 } else {
     instance_activate_all();
+    audio_resume_sound(snd_main_music);
 }
 paused = not paused;
 </string>
