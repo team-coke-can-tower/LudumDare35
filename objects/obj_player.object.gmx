@@ -75,7 +75,7 @@ for(i = 0; i &lt; ds_list_size(shapes); i++) {
         if(collided_bullet != noone) {
             if(collided_bullet.from_enemy) {
                 audio_play_sound(snd_damage2, 2, false);
-                deteriorate_triangle();
+                deteriorate_shape();
                 with(collided_bullet) instance_destroy();
             }
         }
@@ -109,7 +109,7 @@ for(i = 0; i &lt; ds_list_size(shapes); i++) {
         if(collided_pulse != noone) {
             if(collided_pulse.from_enemy) {
                 audio_play_sound(snd_damage2, 2, false);
-                deteriorate_triangle();
+                deteriorate_shape();
                 with(collided_pulse) instance_destroy();
             }
         }

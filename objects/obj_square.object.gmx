@@ -67,10 +67,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (image_index = frame + 17) 
-    {
+            <string>if(image_index = frame + 17) {
     image_index = frame;
-    }
+}
 </string>
           </argument>
         </arguments>

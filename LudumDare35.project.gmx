@@ -33,7 +33,7 @@
       <script>scripts\add_shape.gml</script>
       <script>scripts\get_free_sides.gml</script>
       <script>scripts\attach_shape.gml</script>
-      <script>scripts\deteriorate_triangle.gml</script>
+      <script>scripts\deteriorate_shape.gml</script>
       <script>scripts\init_triangle.gml</script>
       <script>scripts\init_square.gml</script>
       <script>scripts\get_translated_sides.gml</script>
