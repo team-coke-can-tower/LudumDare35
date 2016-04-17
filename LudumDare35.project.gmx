@@ -14,6 +14,7 @@
   </sounds>
   <sprites name="sprites">
     <sprites name="buttons">
+      <sprite>sprites\spr_control</sprite>
       <sprite>sprites\spr_button</sprite>
       <sprite>sprites\spr_menu</sprite>
       <sprite>sprites\spr_resume</sprite>
@@ -25,6 +26,14 @@
       <sprite>sprites\spr_tri_animation</sprite>
       <sprite>sprites\spr_green</sprite>
       <sprite>sprites\spr_squ_animation</sprite>
+    </sprites>
+    <sprites name="tutorial_sprites">
+      <sprite>sprites\spr_box</sprite>
+      <sprite>sprites\spr_w</sprite>
+      <sprite>sprites\spr_a</sprite>
+      <sprite>sprites\spr_s</sprite>
+      <sprite>sprites\spr_d</sprite>
+      <sprite>sprites\spr_mouse</sprite>
     </sprites>
     <sprite>sprites\spr_triangle</sprite>
     <sprite>sprites\spr_square</sprite>
@@ -90,6 +99,14 @@
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
+    <objects name="tutorial">
+      <object>objects\obj_textbox</object>
+      <object>objects\obj_mouse</object>
+      <object>objects\obj_w</object>
+      <object>objects\obj_a</object>
+      <object>objects\obj_s</object>
+      <object>objects\obj_d</object>
+    </objects>
     <objects name="partical_effects">
       <object>objects\obj_tri_animation</object>
       <object>objects\obj_white_particle</object>
@@ -108,6 +125,7 @@
     </objects>
     <objects name="buttons">
       <object>objects\obj_resume</object>
+      <object>objects\obj_controls</object>
       <object>objects\obj_button</object>
       <object>objects\obj_menu</object>
       <object>objects\obj_quit</object>
