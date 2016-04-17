@@ -29,10 +29,10 @@
 randomize();
 
 switch(irandom_range(0, 1)) {
-    case 0: shape = instance_create(x, y, obj_triangle);
+    case 0: shape = instance_create(x, y, obj_enemy_triangle);
             attack_type = "shooter";
             break;
-    case 1: shape = instance_create(x, y, obj_square);
+    case 1: shape = instance_create(x, y, obj_enemy_square);
             attack_type = "melee";
             break;
 }

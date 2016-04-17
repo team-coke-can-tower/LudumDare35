@@ -26,6 +26,10 @@
     <sprite>sprites\spr_bullet</sprite>
     <sprite>sprites\spr_square_pulse</sprite>
     <sprite>sprites\sprite10</sprite>
+    <sprite>sprites\spr_enemy_square</sprite>
+    <sprite>sprites\spr_enemy_triangle</sprite>
+    <sprite>sprites\spr_enemy_pentagon</sprite>
+    <sprite>sprites\spr_enemy_hexagon</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_still</background>
@@ -69,6 +73,7 @@
       <script>scripts\game_over.gml</script>
     </scripts>
     <script>scripts\get_debug_str.gml</script>
+    <script>scripts\rotate_player.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
@@ -92,10 +97,15 @@
     <object>objects\obj_enemy_generator</object>
     <object>objects\obj_pause</object>
     <object>objects\obj_main_game</object>
+    <objects name="enemy_shapes">
+      <object>objects\obj_enemy_triangle</object>
+      <object>objects\obj_enemy_square</object>
+      <object>objects\enemy</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_menu</room>
     <room>rooms\rm_main_game</room>
+    <room>rooms\rm_menu</room>
     <room>rooms\rm_game_over</room>
   </rooms>
   <help>
