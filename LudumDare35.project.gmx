@@ -38,7 +38,6 @@
     <sprite>sprites\spr_enemy_hexagon</sprite>
     <sprite>sprites\game_over_text</sprite>
     <sprite>sprites\sprite19</sprite>
-    <sprite>sprites\spr_bomb</sprite>
     <sprite>sprites\spr_keyw</sprite>
     <sprite>sprites\spr_keya</sprite>
     <sprite>sprites\spr_keys</sprite>
@@ -134,8 +133,6 @@
       <object>objects\obj_growing_triangle</object>
       <object>objects\obj_growing_square</object>
     </objects>
-    <object>objects\object24</object>
-    <object>objects\obj_bomb</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>

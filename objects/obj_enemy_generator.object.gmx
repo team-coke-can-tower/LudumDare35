@@ -53,14 +53,9 @@ alarm[0] = 90;
             <kind>1</kind>
             <string>///Set off enemy, reset alarm
 
-switch(irandom_range(0, 1)) {
-    case 0: enemy_x = irandom_range(0, room_width);
-            instance_create(enemy_x, 0, obj_enemy);
-            break;
-    case 1: enemy_x = irandom_range(0, room_width);
-            instance_create(enemy_x, 0, obj_bomb);
-            break;
-}
+enemy_x = irandom_range(0, room_width);
+instance_create(enemy_x, 0, obj_enemy);
+
 alarm[0] = 90;
 
 </string>
