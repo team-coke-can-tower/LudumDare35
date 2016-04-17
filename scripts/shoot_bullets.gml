@@ -17,5 +17,7 @@ if (alarm[0] == -1){
     
     audio_play_sound(snd_laser, 1, false);
     
-    alarm[0] = 5 // set the next shooting time as 1/6 second (5/30)
+    if(is_player){
+        alarm[0] = 5 // set the next shooting time as 1/6 second (5/30)
+    }
 }
