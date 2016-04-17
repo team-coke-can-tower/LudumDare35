@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>vspeed = 0
+            <string>///Determine whether from enemy or not
+
+from_enemy = false;
+
 </string>
           </argument>
         </arguments>
@@ -48,10 +51,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (image_index = 13) 
-    {
+            <string>if(image_index = 13) {
     instance_destroy();
-    }
+}
+if(instance_exists(creator)){
+    vspeed = creator.vspeed;
+    hspeed = creator.hspeed;
+} else {
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>

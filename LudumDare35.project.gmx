@@ -4,7 +4,14 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_main_music</sound>
+    <sound>sound\snd_laser</sound>
+    <sound>sound\snd_damage1</sound>
+    <sound>sound\snd_damage2</sound>
+    <sound>sound\snd_damage3</sound>
+    <sound>sound\snd_pulse</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="buttons">
       <sprite>sprites\spr_button</sprite>
@@ -30,11 +37,13 @@
       <script>scripts\add_shape.gml</script>
       <script>scripts\get_free_sides.gml</script>
       <script>scripts\attach_shape.gml</script>
-      <script>scripts\deteriate_triangle.gml</script>
+      <script>scripts\deteriorate_shape.gml</script>
       <script>scripts\init_triangle.gml</script>
       <script>scripts\init_square.gml</script>
       <script>scripts\get_translated_sides.gml</script>
       <script>scripts\update_shape.gml</script>
+      <script>scripts\get_sides.gml</script>
+      <script>scripts\update_shapes.gml</script>
     </scripts>
     <scripts name="geometry">
       <script>scripts\normalize.gml</script>
@@ -47,7 +56,9 @@
     <script>scripts\move_player.gml</script>
     <script>scripts\player_init.gml</script>
     <script>scripts\get_bounding_square.gml</script>
-    <script>scripts\press_g.gml</script>
+    <scripts name="global_game">
+      <script>scripts\game_over.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
@@ -63,10 +74,14 @@
     </objects>
     <object>objects\obj_button</object>
     <object>objects\obj_enemy</object>
+    <object>objects\obj_enemy_generator</object>
+    <object>objects\obj_pause</object>
+    <object>objects\obj_main_game</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\menu</room>
-    <room>rooms\main_game</room>
+    <room>rooms\rm_main_game</room>
+    <room>rooms\rm_game_over</room>
+    <room>rooms\rm_menu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
