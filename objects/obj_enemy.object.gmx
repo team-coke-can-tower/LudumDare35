@@ -113,6 +113,8 @@ with(shape){
                 with(global.player) add_shape(obj_square)
             
             instance_destroy();
+            instance_create(collided_bullet.x, collided_bullet.y, obj_green_particle)
+            instance_create(collided_bullet.x, collided_bullet.y, obj_white_particle)
             with(collided_bullet) instance_destroy();
             with(other) instance_destroy();
         }

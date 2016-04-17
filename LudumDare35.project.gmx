@@ -19,6 +19,11 @@
       <sprite>sprites\spr_resume</sprite>
       <sprite>sprites\spr_quit</sprite>
     </sprites>
+    <sprites name="Rachel's Happy Place">
+      <sprite>sprites\spr_white</sprite>
+      <sprite>sprites\spr_tri_animation</sprite>
+      <sprite>sprites\spr_green</sprite>
+    </sprites>
     <sprite>sprites\spr_triangle</sprite>
     <sprite>sprites\spr_square</sprite>
     <sprite>sprites\spr_pentagon</sprite>
@@ -30,6 +35,7 @@
     <sprite>sprites\spr_enemy_pentagon</sprite>
     <sprite>sprites\spr_enemy_hexagon</sprite>
     <sprite>sprites\game_over_text</sprite>
+    <sprite>sprites\sprite19</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_still</background>
@@ -77,6 +83,11 @@
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
+    <objects name="partical_effects">
+      <object>objects\obj_tri_animation</object>
+      <object>objects\obj_white_particle</object>
+      <object>objects\obj_green_particle</object>
+    </objects>
     <objects name="attacks">
       <object>objects\obj_bullet</object>
       <object>objects\obj_pulse</object>
@@ -93,15 +104,15 @@
       <object>objects\obj_menu</object>
       <object>objects\obj_quit</object>
     </objects>
-    <object>objects\obj_enemy</object>
-    <object>objects\obj_enemy_generator</object>
-    <object>objects\obj_pause</object>
-    <object>objects\obj_main_game</object>
     <objects name="enemy_shapes">
       <object>objects\obj_enemy_triangle</object>
       <object>objects\obj_enemy_square</object>
       <object>objects\enemy</object>
     </objects>
+    <object>objects\obj_enemy</object>
+    <object>objects\obj_enemy_generator</object>
+    <object>objects\obj_pause</object>
+    <object>objects\obj_main_game</object>
     <object>objects\obj_game_over</object>
   </objects>
   <rooms name="rooms">
