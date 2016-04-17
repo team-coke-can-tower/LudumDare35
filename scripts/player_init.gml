@@ -6,6 +6,8 @@ shapes = ds_list_create()
 shapes[| 0] = root_shape;  // all shapes belonging to player object
 move_speed = 5;  // universal speed of player shapes
 
+global.player = id
+
 // General init
 /*
 global.shapes_properties = ds_map_create()
