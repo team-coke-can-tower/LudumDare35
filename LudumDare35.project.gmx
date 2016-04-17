@@ -19,13 +19,19 @@
       <sprite>sprites\spr_resume</sprite>
       <sprite>sprites\spr_quit</sprite>
     </sprites>
+    <sprites name="Rachel's Happy Place">
+      <sprite>sprites\spr_tri_crumble</sprite>
+      <sprite>sprites\spr_white</sprite>
+      <sprite>sprites\spr_tri_animation</sprite>
+      <sprite>sprites\spr_green</sprite>
+      <sprite>sprites\spr_squ_animation</sprite>
+    </sprites>
     <sprite>sprites\spr_triangle</sprite>
     <sprite>sprites\spr_square</sprite>
     <sprite>sprites\spr_pentagon</sprite>
     <sprite>sprites\spr_hexagon</sprite>
     <sprite>sprites\spr_bullet</sprite>
     <sprite>sprites\spr_square_pulse</sprite>
-    <sprite>sprites\sprite10</sprite>
     <sprite>sprites\spr_enemy_square</sprite>
     <sprite>sprites\spr_enemy_triangle</sprite>
     <sprite>sprites\spr_enemy_pentagon</sprite>
@@ -83,6 +89,12 @@
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
+    <objects name="partical_effects">
+      <object>objects\obj_tri_animation</object>
+      <object>objects\obj_white_particle</object>
+      <object>objects\obj_green_particle</object>
+      <object>objects\object22</object>
+    </objects>
     <objects name="attacks">
       <object>objects\obj_bullet</object>
       <object>objects\obj_pulse</object>
@@ -99,26 +111,32 @@
       <object>objects\obj_menu</object>
       <object>objects\obj_quit</object>
     </objects>
-    <object>objects\obj_enemy</object>
-    <object>objects\obj_enemy_generator</object>
-    <object>objects\obj_pause</object>
-    <object>objects\obj_main_game</object>
     <objects name="enemy_shapes">
       <object>objects\obj_enemy_triangle</object>
       <object>objects\obj_enemy_square</object>
       <object>objects\enemy</object>
     </objects>
+    <object>objects\obj_enemy</object>
+    <object>objects\obj_enemy_generator</object>
+    <object>objects\obj_pause</object>
+    <object>objects\obj_main_game</object>
     <object>objects\obj_game_over</object>
+<<<<<<< HEAD
     <objects name="Tutorial">
       <object>objects\obj_keyw</object>
       <object>objects\obj_keya</object>
       <object>objects\obj_keys</object>
       <object>objects\obj_keyd</object>
       <object>objects\obj_mouse</object>
+=======
+    <objects name="appearing_shapes">
+      <object>objects\obj_growing_triangle</object>
+      <object>objects\obj_growing_square</object>
+>>>>>>> origin/master
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_menu</room>
+    <room>rooms\rm_main_game</room>
     <room>rooms\rm_main_game</room>
     <room>rooms\rm_game_over</room>
     <room>rooms\rm_tutorial</room>
