@@ -7,9 +7,18 @@ var side_normal_angle = argument1;
 var new_shape = argument2;
 
 var new_shape_sprite = object_get_sprite(new_shape);
+var edge_to_center;
+if(new_shape == obj_triangle){
+    edge_to_center = sprite_get_height(new_shape_sprite)/3;
+}
+else{
+    edge_to_center = sprite_get_height(new_shape_sprite)/2;
+}
 
-var new_shapeX = translated_sides[side_index, 0] + sprite_get_height(new_shape_sprite)/3 * cos(side_normal_angle/360 * pi * 2)
-var new_shapeY = translated_sides[side_index, 1] - sprite_get_height(new_shape_sprite)/3 * sin(side_normal_angle/360 * pi * 2)
+var resolved_coords = polar_to_cart(edge_to_center, side_normal_angle)
+
+var new_shapeX = translated_sides[side_index, 0] + resolved_coords[0]
+var new_shapeY = translated_sides[side_index, 1] + resolved_coords[1]
 
 var new_object = instance_create(new_shapeX, new_shapeY, new_shape);
 

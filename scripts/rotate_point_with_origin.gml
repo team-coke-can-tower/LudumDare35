@@ -11,8 +11,10 @@ var dist_origin_to_point = sqrt(
 var origin_to_point = point_direction(originX, originY, pointX, pointY)
 var overall_angle = origin_to_point + theta
 
+var resolved_coords = polar_to_cart(dist_origin_to_point, overall_angle)
+
 var new_point;
-new_point[0] = originX + cos(overall_angle/360 * 2 * pi) * dist_origin_to_point
-new_point[1] = originY - sin(overall_angle/360 * 2 * pi) * dist_origin_to_point 
+new_point[0] = originX + resolved_coords[0]
+new_point[1] = originY + resolved_coords[1]
 
 return new_point

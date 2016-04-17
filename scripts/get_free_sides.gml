@@ -13,14 +13,18 @@ for(var i = 0;i <= array_length_1d(sides);i++){
     if(!used_sides[i]){
         var a = translated_sides[i, 0];
         var b = translated_sides[i, 1]
-        var angle_center_to_edge = point_direction(geometric_centerX, geometric_centerY, a, b);
+        var angle_center_to_edge = point_direction(x, y, a, b);
         
         if(self.id != other.root_shape.id){
             var angle_root_to_parent = point_direction(other.x, other.y, x, y);
-            var distance = abs(angle_center_to_edge - angle_root_to_parent);
+            var overall_angle = abs(angle_center_to_edge - angle_root_to_parent);
         }
         
-        if(self.id == other.root_shape.id || distance <= 90 || distance >= 270){
+        var potential_placement_offset = polar_to_cart(5, angle_center_to_edge)
+        
+        if((self.id == other.root_shape.id
+         || overall_angle <= 90 || overall_angle >= 270)
+         && !position_meeting(potential_placement_offset[0] + a, potential_placement_offset[1] + b, obj_triangle)){
             ds_list_add(free_sides_indexes, i)
             ds_list_add(free_sides_angles, angle_center_to_edge)
         }

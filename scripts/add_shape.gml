@@ -15,19 +15,14 @@ while(true) {
     if(ds_list_size(possible_sides_indexes) == 0) {
         currentParentI++;
         var list_size = ds_list_size(shapes)
-        if(currentParentI > list_size){
+        if(currentParentI >= list_size){
             show_debug_message("No sides found");
             break;
         }
-    } else {  // TODO: change this to be random
-        // get index of chosen side (i), apss to attach_shape_to_parent script
+    } else {  
+        // TODO: change this to be random
+        // get index of chosen side (i), and to attach_shape_to_parent script
         with(chosen_parent){
-            var arr11 = possible_sides_indexes[|0]
-            var arr12 = possible_sides_indexes[|1]
-            var arr13 = possible_sides_indexes[|2]
-            var arr21 = possible_sides_angles[|0]
-            var arr22 = possible_sides_angles[|1]
-            var arr23 = possible_sides_angles[|2]
             ds_list_add(other.shapes, attach_shape(possible_sides_indexes[|0], possible_sides_angles[|0], shape))
         }
         with(chosen_parent){
