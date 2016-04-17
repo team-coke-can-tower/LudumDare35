@@ -70,10 +70,23 @@
             <string>if(image_index = (frame + 17) % sprite_get_number(spr_square)) {
     image_index = frame;
 }
+
 if (image_index = 80)
     {
     instance_destroy()
     }
+
+if(growing_square != noone) {
+    growing_square.x = x;
+    growing_square.y = y;
+    growing_square.image_angle = image_angle;
+    if (growing_square.image_index == 16) {
+        with(growing_square) instance_destroy();
+        growing_square = noone;
+        visible = true;
+    }
+}
+
 </string>
           </argument>
         </arguments>
