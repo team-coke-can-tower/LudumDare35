@@ -28,7 +28,7 @@
             <string>image_speed = 1;
 hspeed = 15;
 ticks_passed = 0;
-max_ticks = irandom_range(2, 5);
+max_ticks = 4;
 </string>
           </argument>
         </arguments>
