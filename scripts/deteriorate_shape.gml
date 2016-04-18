@@ -14,10 +14,11 @@ if(current_health == 0) {
     with(global.player){
         for(var i = 0;i < ds_list_size(shapes);i++){
             if(shapes[| i].id == other.id){
-                ds_list_delete(shapes, i)
-                if(ds_list_size(shapes) == 0){
+                ds_list_delete(shapes, i);
+                //Lose condition is if root shape dies
+                if(other.id == root_shape.id){
                     audio_stop_sound(snd_main_music);
-                    room_goto(rm_game_over)
+                    room_goto(rm_game_over);
                 }
                 break;
             }
