@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>paused = false;
+            <string>global.paused = false;
 frozen_screen_surf = -1; // Surface used to show frozen screen while paused
 
 audio_play_sound(snd_main_music, 0, true); // TODO: move this to somewhere more sensible
@@ -56,7 +56,7 @@ quit_button = noone;
           <argument>
             <kind>1</kind>
             <string>///Return to game if 'resume' button pressed
-if(paused and (resume_button != noone)) {
+if(global.paused and (resume_button != noone)) {
     if(resume_button.pressed) {
         instance_activate_all();
         audio_resume_sound(snd_main_music);
@@ -66,7 +66,7 @@ if(paused and (resume_button != noone)) {
         resume_button = noone;
         menu_button = noone;
         quit_button = noone;
-        paused = not paused;
+        global.paused = not global.paused;
     }
 }
 </string>
@@ -93,7 +93,7 @@ if(paused and (resume_button != noone)) {
             <kind>1</kind>
             <string>///Draw menu if paused
 
-if(paused) {
+if(global.paused) {
     //Display frozen game in background (game is deactivated, so is now invisible)
     if(surface_exists(frozen_screen_surf)) {
         draw_surface(frozen_screen_surf, 0, 0);
@@ -140,7 +140,7 @@ if(paused) {
             <kind>1</kind>
             <string>///Pause game
 
-if(not paused) {
+if(not global.paused) {
     instance_deactivate_all(true);
     audio_pause_sound(snd_main_music);
     resume_button = instance_create((room_width/2) - 158, (3*room_height/6) - 51, obj_resume);
@@ -156,7 +156,7 @@ if(not paused) {
     menu_button = noone;
     quit_button = noone;
 }
-paused = not paused;
+global.paused = not global.paused;
 </string>
           </argument>
         </arguments>
