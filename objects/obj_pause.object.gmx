@@ -69,6 +69,10 @@ if(global.paused and (resume_button != noone)) {
         global.paused = not global.paused;
     }
 }
+
+if(not global.paused){
+    global.game_time++;
+}
 </string>
           </argument>
         </arguments>

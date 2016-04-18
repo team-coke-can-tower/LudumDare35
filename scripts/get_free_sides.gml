@@ -22,12 +22,13 @@ for(var i = 0;i <= array_length_1d(sides);i++){
         
         var collides = false;
         
+        /*
         var potential_placement_offset = polar_to_cart(5, angle_center_to_edge);
         collides |= position_meeting(potential_placement_offset[0] + a, potential_placement_offset[1] + b, obj_triangle)
         collides |= position_meeting(potential_placement_offset[0] + a, potential_placement_offset[1] + b, obj_square)
         var potential_placement_offset2 = polar_to_cart(50, angle_center_to_edge);
         collides |= position_meeting(potential_placement_offset2[0] + a, potential_placement_offset2[1] + b, obj_triangle)
-        collides |= position_meeting(potential_placement_offset2[0] + a, potential_placement_offset2[1] + b, obj_square)/*
+        collides |= position_meeting(potential_placement_offset2[0] + a, potential_placement_offset2[1] + b, obj_square)
         var potential_placement_offset3 = polar_to_cart(57, angle_center_to_edge + 22.5);
         collides |= position_meeting(potential_placement_offset3[0] + a, potential_placement_offset3[1] + b, obj_triangle)
         collides |= position_meeting(potential_placement_offset3[0] + a, potential_placement_offset3[1] + b, obj_square)

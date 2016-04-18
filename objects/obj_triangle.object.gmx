@@ -115,7 +115,7 @@
     image_index = frame;
 }
 
-if (image_index = 66) {
+if (image_index == 66 &amp;&amp; id != global.player.root_shape) {
     instance_destroy();
     }
 
