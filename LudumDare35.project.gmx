@@ -13,6 +13,7 @@
     <sound>sound\snd_pulse</sound>
     <sound>sound\snd_btn_hover</sound>
     <sound>sound\snd_btn_select</sound>
+    <sound>sound\snd_explosion</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="buttons">
@@ -58,6 +59,8 @@
     <sprite>sprites\spr_paused_text</sprite>
     <sprite>sprites\spr_root_triangle</sprite>
     <sprite>sprites\spr_numbers</sprite>
+    <sprite>sprites\spr_bomb</sprite>
+    <sprite>sprites\spr_explosion</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\splash</background>
@@ -129,6 +132,7 @@
     <objects name="attacks">
       <object>objects\obj_bullet</object>
       <object>objects\obj_pulse</object>
+      <object>objects\obj_explosion</object>
     </objects>
     <objects name="shapes">
       <object>objects\obj_shape</object>
@@ -163,6 +167,7 @@
     </objects>
     <object>objects\obj_screenshake</object>
     <object>objects\obj_number</object>
+    <object>objects\obj_bomb</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_splash</room>

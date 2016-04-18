@@ -152,6 +152,39 @@ for(i = 0; i &lt; ds_list_size(shapes); i++) {
       </action>
       <action>
         <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Collide with bomb explosions (kill shape instantly)
+
+for(i = 0; i &lt; ds_list_size(shapes); i++) {
+    with(shapes[| i]) {
+        collided_explosion = instance_place(x, y, obj_explosion);
+        if(collided_explosion != noone) {
+            audio_play_sound(snd_damage2, 2, false);
+            global.screenshake.is_shaking = true;
+            repeat(current_health) deteriorate_shape();
+            instance_create(collided_explosion.x, collided_explosion.y, obj_white_particle);
+        }
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>601</id>
         <kind>0</kind>
         <userelative>0</userelative>
