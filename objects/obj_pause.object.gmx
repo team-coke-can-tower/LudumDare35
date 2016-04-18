@@ -30,12 +30,51 @@ frozen_screen_surf = -1; // Surface used to show frozen screen while paused
 
 audio_play_sound(snd_main_music, 0, true); // TODO: move this to somewhere more sensible
 
+resume_button = noone;
+menu_button = noone;
+quit_button = noone;
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="0">
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Return to game if 'resume' button pressed
+if(paused and (resume_button != noone)) {
+    if(resume_button.pressed) {
+        instance_activate_all();
+        audio_resume_sound(snd_main_music);
+        with(resume_button) instance_destroy();
+        with(menu_button) instance_destroy();
+        with(quit_button) instance_destroy();
+        resume_button = noone;
+        menu_button = noone;
+        quit_button = noone;
+        paused = not paused;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="75">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -62,11 +101,13 @@ if(paused) {
     draw_set_color(c_black);
     draw_set_alpha(0.5);
     draw_rectangle(0, 0, room_width, room_height, 0);
-    draw_set_halign(fa_center);
-    draw_set_color(c_white);
     draw_set_alpha(1);
-    draw_text(room_width/2, room_height/2, "Game Paused");
-    draw_set_color(c_black);
+    //draw pause text
+    draw_sprite(spr_paused_text, 0, room_width/2, room_height/4);
+    //draw buttons
+    if(resume_button != noone) draw_sprite(resume_button.sprite_index, resume_button.image_index, resume_button.x, resume_button.y);
+    if(resume_button != noone) draw_sprite(menu_button.sprite_index, menu_button.image_index, menu_button.x, menu_button.y);
+    if(resume_button != noone) draw_sprite(quit_button.sprite_index, quit_button.image_index, quit_button.x, quit_button.y);
 } else {
     //Make frozen_screen_surf show the most recent unpaused moment in game
     if(!surface_exists(frozen_screen_surf)) {
@@ -102,9 +143,18 @@ if(paused) {
 if(not paused) {
     instance_deactivate_all(true);
     audio_pause_sound(snd_main_music);
+    resume_button = instance_create((room_width/2) - 158, (3*room_height/6) - 51, obj_resume);
+    menu_button = instance_create((room_width/2) - 158, (4*room_height/6) - 51, obj_menu);
+    quit_button = instance_create((room_width/2) - 158, (5*room_height/6) - 51, obj_quit);
 } else {
     instance_activate_all();
     audio_resume_sound(snd_main_music);
+    with(resume_button) instance_destroy();
+    with(menu_button) instance_destroy();
+    with(quit_button) instance_destroy();
+    resume_button = noone;
+    menu_button = noone;
+    quit_button = noone;
 }
 paused = not paused;
 </string>
