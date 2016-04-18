@@ -58,7 +58,7 @@ instance_create(enemy_x, 0, obj_enemy);
 
 // 1/6 chance of releasing health
 health_x = irandom_range(0, room_width);
-/*if(irandom_range(0, 6) == 6) */instance_create(health_x, 0, obj_pentagon);
+if(irandom_range(0, 6) == 6) instance_create(health_x, 0, obj_pentagon);
 
 // 1/5 chance of releasing bomb as well
 bomb_y = irandom_range(0, room_height);
