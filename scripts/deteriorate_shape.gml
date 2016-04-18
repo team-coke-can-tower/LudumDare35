@@ -16,14 +16,15 @@ if(current_health <= 0) {
         for(var i = 0;i < ds_list_size(shapes);i++){
             if(shapes[| i].id == other.id){
                 ds_list_delete(shapes, i);
+                if (root_shape == noone) continue;
                 //Lose condition is if root shape dies
                 if(other.id == root_shape.id){
+                    root_shape = noone;
                     alarm[2] = 16;  //Player will end game soon
                     //Kill all shapes
-                    /*
                     while(not ds_list_empty(shapes)) {
                         with(shapes[| 0]) deteriorate_shape();
-                    }*/
+                    }
                 }
                 break;
             }
