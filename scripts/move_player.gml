@@ -8,4 +8,7 @@ for (i = 0; i < ds_list_size(shapes); i++) {
     shapes[| i].y += dy;
 }
 
+global.player.x += dx
+global.player.y += dy
+
 update_shapes()

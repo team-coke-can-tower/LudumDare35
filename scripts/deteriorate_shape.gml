@@ -18,11 +18,12 @@ if(current_health <= 0) {
                 ds_list_delete(shapes, i);
                 //Lose condition is if root shape dies
                 if(other.id == root_shape.id){
-                    alarm[2] = 40;  //Player will end game soon
+                    alarm[2] = 16;  //Player will end game soon
                     //Kill all shapes
+                    /*
                     while(not ds_list_empty(shapes)) {
                         with(shapes[| 0]) deteriorate_shape();
-                    }
+                    }*/
                 }
                 break;
             }

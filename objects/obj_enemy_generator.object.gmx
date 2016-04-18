@@ -56,7 +56,7 @@ alarm[0] = 90;
 enemy_x = irandom_range(0, room_width);
 instance_create(enemy_x, 0, obj_enemy);
 
-alarm[0] = 90;
+alarm[0] = 90/(1 + global.game_time/(30*60));
 
 </string>
           </argument>

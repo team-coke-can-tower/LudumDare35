@@ -1,4 +1,4 @@
-///rotate_shapes(amount)
+///rotate_player(amount)
 // called from the context of the player
 
 var amount = argument0;

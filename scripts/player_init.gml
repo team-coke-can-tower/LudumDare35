@@ -10,6 +10,7 @@ shapes[| 0] = root_shape;  // all shapes belonging to player object
 move_speed = 5;  // universal speed of player shapes
 
 global.player = id
+global.game_time = 0
 
 // General init
 /*

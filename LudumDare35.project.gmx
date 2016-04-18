@@ -99,6 +99,7 @@
     </scripts>
     <script>scripts\get_debug_str.gml</script>
     <script>scripts\rotate_player.gml</script>
+    <script>scripts\update_rotation.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
@@ -154,8 +155,8 @@
     <object>objects\obj_number</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_menu</room>
     <room>rooms\rm_main_game</room>
+    <room>rooms\rm_menu</room>
     <room>rooms\rm_game_over</room>
     <room>rooms\rm_tutorial</room>
   </rooms>
