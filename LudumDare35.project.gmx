@@ -27,6 +27,7 @@
       <sprite>sprites\spr_orage</sprite>
       <sprite>sprites\spr_white</sprite>
       <sprite>sprites\spr_tri_animation</sprite>
+      <sprite>sprites\spr_pent_animation</sprite>
       <sprite>sprites\spr_red</sprite>
       <sprite>sprites\spr_green</sprite>
       <sprite>sprites\spr_squ_animation</sprite>
@@ -76,6 +77,7 @@
       <script>scripts\deteriorate_shape.gml</script>
       <script>scripts\init_triangle.gml</script>
       <script>scripts\init_square.gml</script>
+      <script>scripts\init_pentagon.gml</script>
       <script>scripts\get_translated_sides.gml</script>
       <script>scripts\update_shape.gml</script>
       <script>scripts\get_sides.gml</script>
@@ -138,6 +140,7 @@
     <objects name="enemy_shapes">
       <object>objects\obj_enemy_triangle</object>
       <object>objects\obj_enemy_square</object>
+      <object>objects\obj_enemy_pentagon</object>
       <object>objects\enemy</object>
     </objects>
     <object>objects\obj_enemy</object>
@@ -148,6 +151,7 @@
     <objects name="appearing_shapes">
       <object>objects\obj_growing_triangle</object>
       <object>objects\obj_growing_square</object>
+      <object>objects\obj_growing_pentagon</object>
       <object>objects\obj_growing_main_triangle</object>
     </objects>
     <object>objects\obj_screenshake</object>
