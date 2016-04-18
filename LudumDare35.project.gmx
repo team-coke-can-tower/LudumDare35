@@ -159,7 +159,7 @@
     <object>objects\obj_enemy_generator</object>
     <object>objects\obj_pause</object>
     <object>objects\obj_main_game</object>
-    <object>objects\obj_game_over</object>
+    <object>objects\obj_game_over_text</object>
     <objects name="appearing_shapes">
       <object>objects\obj_growing_triangle</object>
       <object>objects\obj_growing_square</object>
@@ -169,6 +169,7 @@
     <object>objects\obj_screenshake</object>
     <object>objects\obj_number</object>
     <object>objects\obj_bomb</object>
+    <object>objects\obj_game_over</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_splash</room>
