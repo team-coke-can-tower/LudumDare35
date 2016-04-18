@@ -1,9 +1,5 @@
 #LudumDare35 - Tessellate
 
-An entry for Ludum Dare 35 Game Jam, with theam "Shape Shifter"
-
-## Description
-
 A fast-paced adrenaline-pumping arcade shooter, Tessellate dares to take the Ludum Dare 35's theme - 'Shapeshift' - literally.
 
 Play as a small but strong triangular CPU and make your way through an 80's tech themed shoot-em-up as you face an endless stream of opponent shapes. What makes your little triangle so special? Why, the power to grow more shapes on yourself as you crush your foes, of course! Mow down hordes of enemies, avoid bombs, and gain power as you assimilate your enemies and go from a mere triangle to a thousand-sided shooting machine!
