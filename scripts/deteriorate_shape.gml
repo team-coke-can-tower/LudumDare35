@@ -16,6 +16,7 @@ if(current_health == 0) {
             if(shapes[| i].id == other.id){
                 ds_list_delete(shapes, i)
                 if(ds_list_size(shapes) == 0){
+                    audio_stop_sound(snd_main_music);
                     room_goto(rm_game_over)
                 }
                 break;

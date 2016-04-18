@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>enemy_gen = instance_create(x, y, obj_enemy_generator);
 pauser = instance_create(x, y, obj_pause);
+screenshake = instance_create(x, y, obj_screenshake);
 player_score = 0;
 
 </string>
