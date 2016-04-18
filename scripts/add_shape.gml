@@ -7,12 +7,15 @@ var currentParentI = 0
 
 while(true) {
     var chosen_parent = shapes[|currentParentI /*irandom_range(0, ds_list_size(shapes)-1/*)*/];
+    var possible_sides_indexes = false;
     with(chosen_parent){
         var possible_sides = get_free_sides(shape);
         var possible_sides_indexes = possible_sides[0]
         var possible_sides_angles = possible_sides[1]
     }
-    if(ds_list_size(possible_sides_indexes) == 0) {
+    if(!possible_sides_indexes) {
+    }
+    else if(ds_list_size(possible_sides_indexes) == 0) {
         currentParentI++;
         var list_size = ds_list_size(shapes)
         if(currentParentI >= list_size){
