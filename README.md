@@ -2,8 +2,6 @@
 
 An entry for Ludum Dare 35 Game Jam, with theam "Shape Shifter"
 
-## Screenshots
-
 ## Description
 
 A fast-paced adrenaline-pumping arcade shooter, Tessellate dares to take the Ludum Dare 35's theme - 'Shapeshift' - literally.
@@ -28,6 +26,17 @@ The aim of the game is to get the most points by gaining shapes.
 
 When you destroy enough triangles and squares, you gain them into your object and gain their attacks. Bombs destroy large areas of the shape when you hit them and you do not gain anything when you collide with them. Pentagons heal the area that they collide with to full health.
 
+## Screenshots
+
+![Game Play screenshot 1](https://cloud.githubusercontent.com/assets/6304200/14623060/a246762e-05c6-11e6-91e0-ad54331a5539.png)
+
+![Game Play screenshot 2](https://cloud.githubusercontent.com/assets/6304200/14623104/0e005696-05c7-11e6-943f-1b0cf1431ae7.png)
+
+![Main Menu screenshot](https://cloud.githubusercontent.com/assets/6304200/14623071/b79b8ae6-05c6-11e6-80e5-ed2a60f0421e.png)
+
+![Pause Screen screenshot](https://cloud.githubusercontent.com/assets/6304200/14623092/ecdf5c14-05c6-11e6-92ee-5fec1eac46d6.png)
+
+
 ## Source notes
 
 To get the code, just clone this repository:
@@ -49,3 +58,10 @@ The mappings that you will need to configure are as follows:
 | images                       | sprites/images
 | background_images            | background/images
 | sounds_music                 | sound/audio
+
+## Credits
+
+* Thomas Hickman (ThomasHickman)
+* Jack Romo (jackromo)
+* Rachel Byrom (turquoiseted)
+* Paul Dunn (Loroseco)
