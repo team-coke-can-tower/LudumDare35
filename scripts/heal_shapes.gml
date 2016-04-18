@@ -12,4 +12,5 @@ for(var i = 0;i < ds_list_size(global.player.shapes);i++){
     }
 }
 
+instance_create(x, y, obj_healing);
 instance_destroy();

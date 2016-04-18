@@ -108,13 +108,13 @@ with(shape){
             has_collided = true;
             audio_play_sound(snd_damage3, 2, false);
             
-            // Attach to main object
-            if(other.shape.object_index == obj_enemy_triangle)
-                with(global.player) add_shape(obj_triangle)
-            if(other.shape.object_index == obj_enemy_square)
-                with(global.player) add_shape(obj_square)
-            
             global.player_score += 1;    
+            
+            // Attach to main object
+            if((other.shape.object_index == obj_enemy_triangle) and (global.player_score % 5 == 0) and (global.player_score &gt; 0))
+                with(global.player) add_shape(obj_triangle)
+            if((other.shape.object_index == obj_enemy_square) and (global.player_score % 5 == 0) and (global.player_score &gt; 0))
+                with(global.player) add_shape(obj_square)
                 
             image_speed = 1;
             instance_create(collided_bullet.x, collided_bullet.y, obj_green_particle)
@@ -153,14 +153,14 @@ with(shape){
         if(not collided_pulse.from_enemy) {
             has_collided = true;
             audio_play_sound(snd_damage3, 2, false);
+                
+            global.player_score += 1;
             
             // Attach to main object
-            if(other.shape.object_index == obj_enemy_triangle)
+            if((other.shape.object_index == obj_enemy_triangle) and (global.player_score % 5 == 0) and (global.player_score &gt; 0))
                 with(global.player) add_shape(obj_triangle)
-            if(other.shape.object_index == obj_enemy_square)
+            if((other.shape.object_index == obj_enemy_square) and (global.player_score % 5 == 0) and (global.player_score &gt; 0))
                 with(global.player) add_shape(obj_square)
-            
-            global.player_score += 1;
                 
             image_speed = 1;
             with(collided_pulse) instance_destroy();
@@ -188,11 +188,9 @@ with(shape){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Make sure enemy dies after leaving screen
+            <string>///Update shape
 
-if(y &gt; room_height) {
-    instance_destroy();
-}
+with(shape) update_shape();
 </string>
           </argument>
         </arguments>
@@ -213,9 +211,11 @@ if(y &gt; room_height) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Update shape
+            <string>///Make sure enemy dies after leaving screen
 
-with(shape) update_shape();
+if(y &gt; room_height) {
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>
