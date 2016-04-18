@@ -243,7 +243,7 @@ for(i = 0; i &lt; ds_list_size(shapes); i++) {
             <kind>1</kind>
             <string>///Move player
 
-move_player(0, -move_speed);
+if(y &gt; 0) move_player(0, -move_speed);
 </string>
           </argument>
         </arguments>
@@ -268,7 +268,7 @@ move_player(0, -move_speed);
             <kind>1</kind>
             <string>///Move player
 
-move_player(0, move_speed);
+if(y &lt; room_height) move_player(0, move_speed);
 
 </string>
           </argument>
@@ -294,7 +294,7 @@ move_player(0, move_speed);
             <kind>1</kind>
             <string>///Move player
 
-move_player(move_speed, 0);
+if(x &lt; room_width) move_player(move_speed, 0);
 
 </string>
           </argument>
@@ -319,8 +319,7 @@ move_player(move_speed, 0);
           <argument>
             <kind>1</kind>
             <string>///Move player
-
-move_player(-move_speed, 0);
+if(x &gt; 0) move_player(-move_speed, 0);
 
 </string>
           </argument>
