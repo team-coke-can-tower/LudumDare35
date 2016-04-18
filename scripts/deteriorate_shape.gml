@@ -8,17 +8,21 @@ if (current_health == full_health) {
     frame += 17;
 }
 
+image_index = frame;
 current_health -= 1;
 
-if(current_health == 0) {
+if(current_health <= 0) {
     with(global.player){
         for(var i = 0;i < ds_list_size(shapes);i++){
             if(shapes[| i].id == other.id){
                 ds_list_delete(shapes, i);
                 //Lose condition is if root shape dies
                 if(other.id == root_shape.id){
-                    audio_stop_sound(snd_main_music);
-                    room_goto(rm_game_over);
+                    alarm[2] = 40;  //Player will end game soon
+                    //Kill all shapes
+                    while(not ds_list_empty(shapes)) {
+                        with(shapes[| 0]) deteriorate_shape();
+                    }
                 }
                 break;
             }
