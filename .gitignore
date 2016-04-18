@@ -1,5 +1,8 @@
+# Remove symlinks
+
 sprites/images
 sound/audio
+background/images
 other-assets
 sounds-music
 
