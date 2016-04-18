@@ -114,7 +114,7 @@ with(shape){
             if(other.shape.object_index == obj_enemy_square)
                 with(global.player) add_shape(obj_square)
             
-            global.player_score.value += 1;    
+            global.player_score += 1;    
                 
             image_speed = 1;
             instance_create(collided_bullet.x, collided_bullet.y, obj_green_particle)
@@ -160,7 +160,7 @@ with(shape){
             if(other.shape.object_index == obj_enemy_square)
                 with(global.player) add_shape(obj_square)
             
-            global.player_score.value += 1;
+            global.player_score += 1;
                 
             image_speed = 1;
             with(collided_pulse) instance_destroy();
