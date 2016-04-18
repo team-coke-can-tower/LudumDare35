@@ -108,6 +108,7 @@
     <script>scripts\get_debug_str.gml</script>
     <script>scripts\rotate_player.gml</script>
     <script>scripts\update_rotation.gml</script>
+    <script>scripts\heal_shapes.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\splash_transition</object>
