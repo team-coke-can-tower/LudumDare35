@@ -142,13 +142,6 @@
     <object>objects\obj_pause</object>
     <object>objects\obj_main_game</object>
     <object>objects\obj_game_over</object>
-    <objects name="Tutorial">
-      <object>objects\obj_keyw</object>
-      <object>objects\obj_keya</object>
-      <object>objects\obj_keys</object>
-      <object>objects\obj_keyd</object>
-      <object>objects\obj_mouse</object>
-    </objects>
     <objects name="appearing_shapes">
       <object>objects\obj_growing_triangle</object>
       <object>objects\obj_growing_square</object>
