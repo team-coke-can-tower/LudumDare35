@@ -27,8 +27,6 @@
             <kind>1</kind>
             <string>image_speed = 1;
 hspeed = 15;
-ticks_passed = 0;
-max_ticks = 4;
 </string>
           </argument>
         </arguments>
@@ -51,13 +49,9 @@ max_ticks = 4;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Update current_tick
+            <string>///Update whether exploding or not
 
-if(image_index == 7) {
-    ticks_passed += 1;
-}
-
-if(ticks_passed &gt;= max_ticks) {
+if(x &gt;= room_width - 32) {
     instance_create(x, y, obj_explosion);
     instance_destroy();
 }
