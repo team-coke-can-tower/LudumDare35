@@ -102,6 +102,9 @@ alarm[1] = 30;
             <string>///Move towards player horizontally
 
 if(shape.object_index == obj_enemy_square) {
+    if(x - global.player.x &lt;= 2) {
+        x = global.player.x;
+    }
     if(x &lt; global.player.x) {
         hspeed = 2;
     } else if(x &gt; global.player.x) {
