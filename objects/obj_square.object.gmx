@@ -71,7 +71,7 @@
     image_index = frame;
 }
 
-if (image_index = 80)
+if (image_index = 84)
     {
     instance_destroy()
     }
