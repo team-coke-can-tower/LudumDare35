@@ -16,6 +16,7 @@
   </sounds>
   <sprites name="sprites">
     <sprites name="buttons">
+      <sprite>sprites\spr_next</sprite>
       <sprite>sprites\spr_control</sprite>
       <sprite>sprites\spr_button</sprite>
       <sprite>sprites\spr_menu</sprite>
@@ -34,6 +35,7 @@
       <sprite>sprites\spr_root_tri_animation</sprite>
     </sprites>
     <sprites name="tutorial_sprites">
+      <sprite>sprites\spr_box_2</sprite>
       <sprite>sprites\spr_box</sprite>
       <sprite>sprites\spr_mouse</sprite>
       <sprite>sprites\spr_keyw</sprite>
@@ -58,6 +60,7 @@
     <sprite>sprites\spr_numbers</sprite>
   </sprites>
   <backgrounds name="background">
+    <background>background\splash</background>
     <background>background\bg_still</background>
     <background>background\bckgrnd_frame</background>
     <background>background\background1</background>
@@ -104,9 +107,11 @@
     <script>scripts\update_rotation.gml</script>
   </scripts>
   <objects name="objects">
+    <object>objects\splash_transition</object>
     <object>objects\obj_player</object>
     <objects name="tutorial">
       <object>objects\obj_textbox</object>
+      <object>objects\obj_textbox_2</object>
       <object>objects\obj_mouse</object>
       <object>objects\obj_w</object>
       <object>objects\obj_a</object>
@@ -137,6 +142,7 @@
       <object>objects\obj_button</object>
       <object>objects\obj_menu</object>
       <object>objects\obj_quit</object>
+      <object>objects\obj_next</object>
     </objects>
     <objects name="enemy_shapes">
       <object>objects\obj_enemy_triangle</object>
@@ -159,10 +165,12 @@
     <object>objects\obj_number</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_main_game</room>
+    <room>rooms\rm_splash</room>
     <room>rooms\rm_menu</room>
+    <room>rooms\rm_main_game</room>
     <room>rooms\rm_game_over</room>
     <room>rooms\rm_tutorial</room>
+    <room>rooms\rm_tutorial_2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
