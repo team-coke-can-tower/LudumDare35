@@ -76,6 +76,7 @@ for(var i = 0; i &lt; ds_list_size(shapes); i++) {
             if(collided_bullet.from_enemy) {
                 audio_play_sound(snd_damage2, 2, false);
                 deteriorate_shape();
+                instance_create(collided_bullet.x, collided_bullet.y, obj_red)
                 with(collided_bullet) instance_destroy();
             }
         }
@@ -110,6 +111,7 @@ for(i = 0; i &lt; ds_list_size(shapes); i++) {
             if(collided_pulse.from_enemy) {
                 audio_play_sound(snd_damage2, 2, false);
                 deteriorate_shape();
+                instance_create(collided_pulse.x, collided_pulse.y, obj_orange)
                 with(collided_pulse) instance_destroy();
             }
         }
