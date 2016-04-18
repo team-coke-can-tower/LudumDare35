@@ -34,6 +34,7 @@
       <sprite>sprites\spr_green</sprite>
       <sprite>sprites\spr_squ_animation</sprite>
       <sprite>sprites\spr_root_tri_animation</sprite>
+      <sprite>sprites\spr_healing</sprite>
     </sprites>
     <sprites name="tutorial_sprites">
       <sprite>sprites\spr_box_2</sprite>
@@ -129,6 +130,7 @@
       <object>objects\obj_green_particle</object>
       <object>objects\obj_red</object>
       <object>objects\object22</object>
+      <object>objects\obj_healing</object>
     </objects>
     <objects name="attacks">
       <object>objects\obj_bullet</object>
