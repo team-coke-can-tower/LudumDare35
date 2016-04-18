@@ -30,6 +30,7 @@
       <sprite>sprites\spr_red</sprite>
       <sprite>sprites\spr_green</sprite>
       <sprite>sprites\spr_squ_animation</sprite>
+      <sprite>sprites\spr_root_tri_animation</sprite>
     </sprites>
     <sprites name="tutorial_sprites">
       <sprite>sprites\spr_box</sprite>
@@ -52,6 +53,7 @@
     <sprite>sprites\game_over_text</sprite>
     <sprite>sprites\sprite19</sprite>
     <sprite>sprites\spr_paused_text</sprite>
+    <sprite>sprites\spr_root_triangle</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_still</background>
@@ -145,6 +147,7 @@
     <objects name="appearing_shapes">
       <object>objects\obj_growing_triangle</object>
       <object>objects\obj_growing_square</object>
+      <object>objects\obj_growing_main_triangle</object>
     </objects>
     <object>objects\obj_screenshake</object>
   </objects>
