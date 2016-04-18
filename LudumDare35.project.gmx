@@ -36,6 +36,7 @@
       <sprite>sprites\spr_root_tri_animation</sprite>
     </sprites>
     <sprites name="tutorial_sprites">
+      <sprite>sprites\spr_textbox3</sprite>
       <sprite>sprites\spr_box_2</sprite>
       <sprite>sprites\spr_box</sprite>
       <sprite>sprites\spr_mouse</sprite>
@@ -115,12 +116,17 @@
     <object>objects\obj_player</object>
     <objects name="tutorial">
       <object>objects\obj_textbox</object>
+      <object>objects\obj_textbox3</object>
       <object>objects\obj_textbox_2</object>
       <object>objects\obj_mouse</object>
       <object>objects\obj_w</object>
       <object>objects\obj_a</object>
       <object>objects\obj_s</object>
       <object>objects\obj_d</object>
+      <object>objects\obj_enemy_triangle_still</object>
+      <object>objects\obj_pentagon_still</object>
+      <object>objects\obj_enemy_square_still</object>
+      <object>objects\obj_bomb_still</object>
     </objects>
     <objects name="partical_effects">
       <object>objects\obj_tri_animation</object>
@@ -173,10 +179,11 @@
   <rooms name="rooms">
     <room>rooms\rm_splash</room>
     <room>rooms\rm_menu</room>
-    <room>rooms\rm_main_game</room>
-    <room>rooms\rm_game_over</room>
     <room>rooms\rm_tutorial</room>
     <room>rooms\rm_tutorial_2</room>
+    <room>rooms\rm_tutorial_3</room>
+    <room>rooms\rm_main_game</room>
+    <room>rooms\rm_game_over</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
