@@ -39,10 +39,10 @@ switch(irandom_range(0, 1)) {
 
 with(shape) init_shape();
 
-vspeed = 5;
-shape.vspeed = 5;
+vspeed = 3;
+shape.vspeed = 3;
 
-alarm[1] = 30;  // start shooting
+alarm[1] = 60;  // start shooting
 
 </string>
           </argument>
@@ -75,7 +75,7 @@ switch(attack_type) {
                   break;
 }
 
-alarm[1] = 30;
+alarm[1] = 60;
 
 </string>
           </argument>
@@ -102,13 +102,13 @@ alarm[1] = 30;
             <string>///Move towards player horizontally
 
 if(shape.object_index == obj_enemy_square) {
-    if(x - global.player.x &lt;= 2) {
-        x = global.player.x;
-    }
+    //if(x - global.player.x &lt;= 2) {
+    //    x = global.player.x;
+    //}
     if(x &lt; global.player.x) {
-        hspeed = 2;
+        hspeed = 1;
     } else if(x &gt; global.player.x) {
-        hspeed = -2;
+        hspeed = -1;
     } else {
         hspeed = 0;
     }
