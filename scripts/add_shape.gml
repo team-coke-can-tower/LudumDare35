@@ -14,6 +14,7 @@ while(true) {
         var possible_sides_angles = possible_sides[1]
     }
     if(!possible_sides_indexes) {
+        break;
     }
     else if(ds_list_size(possible_sides_indexes) == 0) {
         currentParentI++;
