@@ -66,11 +66,12 @@
     <sprite>sprites\spr_bomb</sprite>
     <sprite>sprites\spr_explosion</sprite>
     <sprite>sprites\spr_bomb_warning</sprite>
+    <sprite>sprites\spr_main_hud_top</sprite>
+    <sprite>sprites\spr_main_hud_bottom</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\splash</background>
     <background>background\bg_still</background>
-    <background>background\bckgrnd_frame</background>
     <background>background\background1</background>
   </backgrounds>
   <paths name="paths"/>
@@ -181,6 +182,8 @@
     <object>objects\obj_number</object>
     <object>objects\obj_bomb</object>
     <object>objects\obj_game_over</object>
+    <object>objects\obj_main_hud_top</object>
+    <object>objects\obj_main_hud_bottom</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_splash</room>

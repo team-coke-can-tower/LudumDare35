@@ -56,10 +56,10 @@
     <instance objName="obj_pentagon_still" x="440" y="237" name="inst_D7F3A7F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_textbox3" x="104" y="445" name="inst_4419DCE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bomb_still" x="600" y="230" name="inst_2B9F28AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_main_hud_top" x="0" y="0" name="inst_10BB3F78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_main_hud_bottom" x="0" y="704" name="inst_362AD740" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
-  <tiles>
-    <tile bgName="bckgrnd_frame" x="0" y="0" w="1024" h="64" xo="0" yo="0" id="10000003" name="inst_B1B8D512" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-  </tiles>
+  <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
   <PhysicsWorldLeft>0</PhysicsWorldLeft>
