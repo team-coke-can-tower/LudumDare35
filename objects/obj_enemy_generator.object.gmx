@@ -53,9 +53,15 @@ alarm[0] = 180;
             <kind>1</kind>
             <string>///Set off enemy, reset alarm
 
-enemy_x = irandom_range(0, room_width);
-instance_create(enemy_x, 0, obj_enemy);
+randomize();
 
+enemy_x = irandom_range(0, room_width);
+if(irandom_range(0, 1) == 0) {
+    instance_create(enemy_x, 0, obj_enemy_triangle);
+} else {
+    instance_create(enemy_x, 0, obj_enemy_square);
+}
+    
 // 1/6 chance of releasing health
 health_x = irandom_range(0, room_width);
 if(irandom_range(0, 6) == 6) instance_create(health_x, 0, obj_pentagon);

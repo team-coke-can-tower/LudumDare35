@@ -25,7 +25,42 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0;
+            <string>init_shape();
+
+vspeed = 3;
+image_speed = 0;
+
+has_collided = false;  // collided with attack or not
+
+alarm[1] = 60;  // start shooting
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Use attack, reset alarm
+
+if(not has_collided) create_pulse(id, true);
+
+alarm[1] = 60;
+
 </string>
           </argument>
         </arguments>
@@ -48,8 +83,92 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(image_index == 10){
+            <string>if(image_index == 10) {
     instance_destroy();
+}
+
+update_shape();
+
+if(y &gt; room_height) {
+    instance_destroy();
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_pulse">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Do collision detection with pulse
+
+collided_pulse = instance_place(x, y, obj_pulse);
+if(not collided_pulse.from_enemy) {
+    has_collided = true;
+    audio_play_sound(snd_damage3, 2, false);
+        
+    global.player_score += 1;
+    
+    // Attach to main object
+    if(global.player_score % 5 == 0) and (global.player_score &gt; 0)
+        with(global.player) add_shape(obj_square);
+        
+    image_speed = 1;
+    with(collided_pulse) instance_destroy();
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_bullet">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Do collision detection with bullets
+
+collided_bullet = instance_place(x, y, obj_bullet);
+if(not collided_bullet.from_enemy) {
+    has_collided = true;
+    audio_play_sound(snd_damage3, 2, false);
+    
+    global.player_score += 1;    
+    
+    // Attach to main object
+    if(global.player_score % 5 == 0) and (global.player_score &gt; 0)
+        with(global.player) add_shape(obj_square)
+        
+    image_speed = 1;
+    instance_create(collided_bullet.x, collided_bullet.y, obj_green_particle);
+    instance_create(collided_bullet.x, collided_bullet.y, obj_white_particle);
+    with(collided_bullet) instance_destroy();
 }
 </string>
           </argument>
