@@ -65,6 +65,7 @@ bomb_y = irandom_range(0, room_height);
 if(irandom_range(0, 5) == 5) instance_create(0, bomb_y, obj_bomb);
 
 alarm[0] = 120/(1 + global.game_time/(30*60));
+if(alarm[0] &lt; 40) alarm[0] = 40;
 
 </string>
           </argument>
