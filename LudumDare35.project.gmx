@@ -14,6 +14,8 @@
     <sound>sound\snd_btn_hover</sound>
     <sound>sound\snd_btn_select</sound>
     <sound>sound\snd_explosion</sound>
+    <sound>sound\snd_bomb_warning</sound>
+    <sound>sound\snd_healing</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="buttons">
@@ -63,6 +65,7 @@
     <sprite>sprites\spr_numbers</sprite>
     <sprite>sprites\spr_bomb</sprite>
     <sprite>sprites\spr_explosion</sprite>
+    <sprite>sprites\spr_bomb_warning</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\splash</background>
@@ -162,6 +165,7 @@
       <object>objects\obj_enemy_square</object>
       <object>objects\obj_enemy_pentagon</object>
       <object>objects\enemy</object>
+      <object>objects\obj_bomb_warning</object>
     </objects>
     <object>objects\obj_enemy_generator</object>
     <object>objects\obj_pause</object>

@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 1;
+audio_play_sound(snd_healing, 0, false);
 </string>
           </argument>
         </arguments>
