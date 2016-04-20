@@ -92,6 +92,93 @@ if(growing_square != noone) {
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_explosion">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>collided_explosion = instance_place(x, y, obj_explosion);
+audio_play_sound(snd_damage2, 2, false);
+global.screenshake.is_shaking = true;
+repeat(current_health) deteriorate_shape();
+instance_create(collided_explosion.x, collided_explosion.y, obj_white_particle);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_pulse">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>collided_pulse = instance_place(x, y, obj_pulse);
+if(collided_pulse.from_enemy) {
+    audio_play_sound(snd_damage2, 2, false);
+    global.screenshake.is_shaking = true;
+    deteriorate_shape();
+    instance_create(collided_pulse.x, collided_pulse.y, obj_orange)
+    with(collided_pulse) instance_destroy();
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_bullet">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>collided_bullet = instance_place(x, y, obj_bullet);
+if(collided_bullet.from_enemy) {
+    audio_play_sound(snd_damage2, 2, false);
+    global.screenshake.is_shaking = true;
+    deteriorate_shape();
+    instance_create(collided_bullet.x, collided_bullet.y, obj_red)
+    with(collided_bullet) instance_destroy();
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
   </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
