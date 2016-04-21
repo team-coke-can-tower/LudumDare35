@@ -1,4 +1,4 @@
-#LudumDare35 - Tessellate
+#Tessellate
 
 A fast-paced adrenaline-pumping arcade shooter, Tessellate dares to take the Ludum Dare 35's theme - 'Shapeshift' - literally.
 
