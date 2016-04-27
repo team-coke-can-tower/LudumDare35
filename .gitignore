@@ -8,6 +8,7 @@ sounds-music
 
 # Remove Config files
 *.png
+!fonts/*
 *.bmp
 *.ico
 Configs/Default/*
