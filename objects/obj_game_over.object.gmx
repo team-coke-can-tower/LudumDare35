@@ -25,10 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>final_score = instance_create(room_width/2, room_height/2, obj_number);
+            <string>final_score = instance_create(room_width/2, y, obj_number);//instance_create(room_width/2, room_height/2 - 20, obj_number);
 final_score.value = global.player_score;
 final_score.scale = 3;
-final_score.x += sprite_get_width(spr_numbers)*final_score.scale*string_length(string(final_score.value))/3;
+final_score.x -= sprite_get_width(spr_numbers)*final_score.scale*string_length(string(final_score.value))/2;
 </string>
           </argument>
         </arguments>
