@@ -137,7 +137,12 @@ case "http_finished":
     row2_offset = 150
     row_width = 20
     
+    if(!ds_map_exists(data, "top_10")){
+        state = "error"
+        exit;
+    }
     top_10 = data[? "top_10"]
+    
     draw_text(x, y, "Username")
     draw_text(x + row2_offset, y, "Score")
     for(var i = 0;i &lt; ds_list_size(top_10);i++){
