@@ -44,7 +44,7 @@ git clone git@github.com:ThomasHickman/LudumDare35.git
 The assets in this game-jam are hosted in Google Drive:
 https://drive.google.com/folderview?id=0B3DdC1eaTiECYzRuS0pIYVlHcFE&usp=sharing
 
-If you want to run the game in gamemaker with the assets, you will need to load some folders from Google Drive into the main folder created by git (by either copying these folders, or creating symlinks (`mklink /D` in windows)).
+If you want to run the game in GameMaker with the assets, you will need to load some folders from Google Drive into the main folder created by git (by either copying these folders, or creating symlinks (`mklink /D` in windows)).
 
 The mappings that you will need to configure are as follows:
 
