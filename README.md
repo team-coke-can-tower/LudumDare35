@@ -55,6 +55,10 @@ The mappings that you will need to configure are as follows:
 | background_images            | background/images
 | sounds_music                 | sound/audio
 
+### Highscore server
+
+The highscore server is hosted on pythonanywhere and the source of the server file can be found here: https://www.pythonanywhere.com/user/thing789/shares/d68fed9b57ae4d6fa49e4d16a12d47a7/
+
 ## Credits
 
 * Thomas Hickman (ThomasHickman)
