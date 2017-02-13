@@ -64,4 +64,4 @@ The highscore server is hosted on pythonanywhere and the source of the server fi
 * Thomas Hickman (ThomasHickman)
 * Jack Romo (jackromo)
 * Rachel Byrom (turquoiseted)
-* Paul Dunn (Loroseco)
+* Paul Dunn (PfoD)
